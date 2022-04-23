@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <div class="w-40 h-40 bg-red-500 rounded-full" />
+  <div>
+    <Hero />
+    <h1 class="text-red-400">Teste de Tailwind</h1>
+  </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Hero from "./components/Hero.vue";
 
 export default {
-  name: "App",
+  name: "Fio de nós",
   components: {
     HelloWorld,
+    Hero,
   },
 };
 </script>
