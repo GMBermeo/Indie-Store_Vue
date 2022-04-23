@@ -1,26 +1,17 @@
 @font-face {
-	font-family: 'Steelfish';
-	src: 
-		local('Steelfish'),
-		url('static/fonts/steelfish rg.otf') 
-		format('opentype');
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_rg.otf") format("opentype");
 }
 /*bold version*/
 @font-face {
-	font-family: 'Steelfish';
-	src: 
-		local('Steelfish'),
-		url('static/fonts/steelfish_bd.otf') 
-		format('opentype');
-        font-weight: bold;
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_bd.otf") format("opentype");
+  font-weight: bold;
 }
 @font-face {
-	font-family: 'Steelfish';
-	src: 
-		local('Steelfish'),
-		url('static/fonts/steelfish eb.otf') 
-		format('opentype');
-        font-weight: bolder;
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_eb.otf") format("opentype");
+  font-weight: bolder;
 }
 /* @font-face {
 	font-family: 'Steelfish';
