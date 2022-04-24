@@ -1,7 +1,11 @@
 <template>
   <div>
     <Hero />
-    <h1 class="text-red-400">Teste de Tailwind</h1>
+    <h1
+      class="text-primary-400 lg:text-stone-50 md:text-neutral-900 text-center"
+    >
+      Teste de Tailwind
+    </h1>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="fio-logo"
+    class="fio-logo align-middle"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 476.43 127.81"
   >
