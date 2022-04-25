@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    <NavBar />
     <h1
       class="text-primary-400 lg:text-stone-50 md:text-neutral-900 text-center"
     >
@@ -10,14 +11,14 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 
 export default {
   name: "Fio de nós",
   components: {
-    HelloWorld,
     Hero,
+    NavBar,
   },
 };
 </script>

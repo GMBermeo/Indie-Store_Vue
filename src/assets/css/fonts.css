@@ -13,6 +13,24 @@
   src: local("Steelfish"), url("../fonts/steelfish_eb.otf") format("opentype");
   font-weight: bolder;
 }
+@font-face {
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_rg-i.otf") format("opentype");
+  font-style: italic;
+}
+/*bold version*/
+@font-face {
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_bd-i.otf") format("opentype");
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Steelfish";
+  src: local("Steelfish"), url("../fonts/steelfish_eb-i.otf") format("opentype");
+  font-style: italic;
+  font-weight: bolder;
+}
 /* @font-face {
 	font-family: 'Steelfish';
 	src: 
@@ -21,3 +39,16 @@
 		format('opentype');
         font-weight: outline;
 } */
+
+.steelfish,
+.steelfish-i,
+.steelfish-b,
+.steelfish-eb {
+  font-kerning: none;
+  letter-spacing: 1px;
+  font-family: "Steelfish", sans-serif;
+}
+
+.steelfish-i {
+  font-style: italic;
+}

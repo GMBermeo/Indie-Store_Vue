@@ -1,5 +1,7 @@
 :root {
-  --primary-color: #b0191c;
+  --primary-400: #b0191c;
   --gradient1: #dd1a25;
   --gradient2: #af191a;
+  --primary-300: #e82e43;
+  --primary-500: #7f1617;
 }
