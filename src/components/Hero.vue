@@ -30,10 +30,10 @@
 // window.addEventListener("scroll", () => {
 //   heroParallax.style.backgroundPositionY = -window.scrollY / 2 + "px";
 // });
-import FioLogo from "./FioLogo.vue";
+import FioLogoFull from "./svg/FioLogoFull.vue";
 export default {
   components: {
-    FioLogo,
+    FioLogoFull,
   },
 };
 </script>

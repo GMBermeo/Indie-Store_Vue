@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="fio-logo align-middle"
+    class="fio-logo align-middle {{classes}}"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 476.43 127.81"
   >
@@ -125,3 +125,8 @@
   }
 }
 </style>
+<script>
+export default {
+  props: ["classes"],
+};
+</script>

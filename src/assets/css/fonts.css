@@ -18,7 +18,6 @@
   src: local("Steelfish"), url("../fonts/steelfish_rg-i.otf") format("opentype");
   font-style: italic;
 }
-/*bold version*/
 @font-face {
   font-family: "Steelfish";
   src: local("Steelfish"), url("../fonts/steelfish_bd-i.otf") format("opentype");
@@ -45,10 +44,18 @@
 .steelfish-b,
 .steelfish-eb {
   font-kerning: none;
-  letter-spacing: 1px;
   font-family: "Steelfish", sans-serif;
+  font-weight: normal;
 }
 
 .steelfish-i {
   font-style: italic;
+}
+
+.steelfish-b {
+  font-weight: bold;
+}
+
+.steelfish-eb {
+  font-weight: bolder;
 }
