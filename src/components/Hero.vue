@@ -1,12 +1,11 @@
 <template>
   <header>
     <div
-      class="w-full bg-center bg-cover h-[12rem] border-0 md:border-20 md:h-[16rem] lg:h-[20rem] max-h-348 bg-primary-400 bg-blend-multiply bg-no-repeat herobanner steelfish"
-      id="heroParallax"
+      class="w-full bg-center bg-cover h-[12rem] border-0 md:border-20 md:h-[16rem] lg:h-[20rem] max-h-348 bg-primary-400 bg-blend-multiply bg-no-repeat herobanner"
     >
       <div class="flex items-center justify-center w-full h-full p-36px">
         <div class="text-center">
-          <FioLogo />
+          <FioLogoFull />
         </div>
       </div>
     </div>

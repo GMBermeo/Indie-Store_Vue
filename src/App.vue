@@ -1,13 +1,14 @@
 <template>
-  <div>
+  <div class="antialiased steelfish">
     <Hero />
     <NavBar />
     <About />
-    <h1
-      class="text-primary-400 lg:text-stone-50 md:text-neutral-900 text-center"
+    <br /><br />
+    <div
+      class="text-primary-400 lg:text-stone-50 md:text-neutral-900 absolute bottom-0 w-full"
     >
-      Teste de Tailwind
-    </h1>
+      <h1 class="text-white text-center">Teste de Tailwind</h1>
+    </div>
   </div>
 </template>
 

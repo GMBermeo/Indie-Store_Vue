@@ -27,7 +27,7 @@
     </g>
   </svg>
 </template>
-<style>
+<style scoped>
 .cls-1 {
   fill: url(#Gradiente_sem_nome_17);
 }
