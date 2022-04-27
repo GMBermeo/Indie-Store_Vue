@@ -4,12 +4,19 @@ module.exports = {
   theme: {
     colors: {
       primary: {
-        400: "#b0191c",
         300: "#e82e43",
+        400: "#b0191c",
         500: "#7f1617",
+
+        A400: "#dd1424",
       },
     },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        // Simple 9 row grid
+        9: "repeat(9, minmax(0, 1fr))",
+      },
+    },
   },
   plugins: [],
 };

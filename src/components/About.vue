@@ -1,20 +1,17 @@
 <template>
-  <div
-    id="About"
-    class="flex flex-row md:m-auto px-4 items-start justify-center container w-full md:w-3/4 lg:w-3/5 xl:w-2/5"
-  >
-    <div class="grid gap-3 pt-2 pl-3 pr-6 grid-cols-2 md:grid-cols-3">
+  <div id="About" class="about-cards px-0">
+    <div class="grid gap-3 pt-2 pl-1 md:pl-2 pr-6 grid-cols-2 md:grid-cols-3">
       <div class="row-span-2 col-span-1 md:col-span-2">
         <div class="h-full min-h-3 relative z-0">
           <span
-            class="absolute bg-primary-300 bottom-7 left-0 flex justify-center items-baseline z-10 py-2 pl-2 pr-6 h-9 w-1/2 polygon4"
+            class="absolute bg-primary-300 bottom-7 left-0 flex justify-center items-baseline z-10 py-2 pl-2 pr-6 h-12 w-1/2 polygon4"
           />
-          <div class="bg-primary-500 img-mask1 h-full ml-4"></div>
+          <div class="bg-primary-400 img-mask1 h-full ml-4"></div>
         </div>
       </div>
 
       <div class="flex gap-0">
-        <span class="min-w-fit ml-4"><FioLogo class="h-14" /></span>
+        <span class="min-w-fit ml-4"><FioLogo class="h-16" /></span>
         <span class="w-full ml-6 bg-primary-300 polygon3 h-16" />
       </div>
       <p class="col-span-1 row-span-1 leading-tight">
@@ -30,15 +27,13 @@
       </p>
     </div>
   </div>
-  <div
-    class="flex flex-row md:m-auto px-4 pt-6 items-start justify-center container w-full md:w-3/4 lg:w-3/5 xl:w-2/5"
-  >
+  <div class="about-cards px-4 pt-6">
     <div
-      class="grid gap-3 pt-2 pl-3 pr-6 grid-cols-3 md:grid-cols-4 grid-rows-3"
+      class="grid gap-3 pt-2 pr-1 md:pr-5 md:pl-2 grid-cols-3 md:grid-cols-4 grid-rows-9"
     >
-      <div class="row-span-3 col-span-2 md:col-span-3">
-        <FutureWear class="row-span-1 mb-4" />
-        <p class="row-span-1 leading-tight pb-16">
+      <div class="row-[span_9_/_span_9] col-span-2 md:col-span-3">
+        <FutureWear class="row-span-3 mb-4" />
+        <p class="row-span-3 leading-tight pb-16">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -48,15 +43,16 @@
           vero eros et accumsan et iusto odio dignissim qui blandit praesent
           luptatum zzril delenit augue duis dolore te
         </p>
-        <div class="row-span-1 relative z-0">
+        <div class="row-span-3 relative z-0">
           <span
             class="absolute bg-primary-300 left-16 bottom-0 z-0 h-12 polygon6 w-full"
           />
         </div>
       </div>
       <div
-        class="row-span-3 col-span-1 md:col-span-1 bg-primary-400 pb-50 polygon5 z-10"
+        class="row-[span_8_/_span_8] col-span-1 md:col-span-1 bg-primary-A400 pb-50 polygon5 z-10"
       />
+      <div class="row-span-1" />
     </div>
   </div>
 </template>
