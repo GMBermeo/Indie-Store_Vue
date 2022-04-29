@@ -1,5 +1,5 @@
 <template>
-  <div id="About" class="about-cards px-0">
+  <div id="About" class="inner-container px-0">
     <div
       class="rellax grid grid-cols-2 gap-3 pt-2 pl-1 pr-6 md:grid-cols-3 md:pl-2"
     >
@@ -41,7 +41,7 @@
       </p>
     </div>
   </div>
-  <div class="about-cards px-4 py-6">
+  <div class="inner-container px-4 py-6">
     <div
       class="grid grid-cols-3 grid-rows-9 gap-3 pt-2 pr-1 md:grid-cols-4 md:pr-5 md:pl-2"
     >
@@ -60,13 +60,13 @@
         <div class="relative z-0 row-span-3">
           <span
             class="rellax polygon6 absolute left-16 bottom-0 z-0 h-12 w-full bg-primary-300"
-            data-rellax-speed="1"
+            data-rellax-speed="-1"
           />
         </div>
       </div>
       <div
         class="pb-50 polygon5 rellax z-10 col-span-1 row-[span_8_/_span_8] bg-primary-A400 md:col-span-1"
-        data-rellax-speed="-1"
+        data-rellax-speed="1"
       />
       <div class="row-span-1" />
     </div>
