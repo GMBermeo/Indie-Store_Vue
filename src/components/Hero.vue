@@ -1,11 +1,13 @@
 <template>
   <header>
     <div
-      class="w-full bg-center bg-cover h-[12rem] border-0 md:border-20 md:h-[16rem] lg:h-[20rem] max-h-348 bg-primary-400 bg-blend-multiply bg-no-repeat herobanner"
+      class="md:border-20 max-h-348 rellax -z-50 h-[12rem] w-full border-0 bg-primary-400 bg-header-hero bg-cover bg-center bg-no-repeat bg-blend-multiply md:h-[16rem] lg:h-[20rem]"
+      zindex="10"
+      data-rellax-speed="1"
     >
-      <div class="flex items-center justify-center w-full h-full p-36px">
+      <div class="p-36px flex h-full w-full items-center justify-center">
         <div class="text-center">
-          <FioLogoFull />
+          <FioLogoFull class="rellax" data-rellax-speed="-2" />
         </div>
       </div>
     </div>
@@ -13,10 +15,9 @@
 </template>
 <style>
 .herobanner {
-  background-image: url(../assets/images/assetHero.png);
+  /* background-image: url(../assets/images/assetHero.png); */
   /* max-height: 348px; */
-  /* background-attachment: local;
-  transition: all 2s ease; */
+  background-attachment: fixed;
   padding-bottom: 4px;
   border-style: solid;
   border-color: var(--primary-400);

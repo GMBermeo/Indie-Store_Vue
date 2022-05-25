@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .about-cards {
-    @apply flex flex-row m-auto md:px-4 items-start justify-center container w-full md:w-3/4 lg:w-3/5 xl:w-2/5;
+  .inner-container {
+    @apply container m-auto flex w-full flex-row items-start justify-center md:w-3/4 md:px-4 lg:w-3/5 xl:w-2/5;
   }
 }

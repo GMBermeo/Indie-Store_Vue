@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   // content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     colors: {
@@ -17,6 +21,10 @@ module.exports = {
         9: "repeat(9, minmax(0, 1fr))",
       },
     },
+    backgroundImage: {
+      "header-hero": "url('images/assetHero.png')",
+      "obzidian-pattern": "url('images/obzidianPattern.png')",
+    },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")],
 };
