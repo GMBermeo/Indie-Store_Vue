@@ -28,6 +28,7 @@
       <p
         class="rellax col-span-1 row-span-1 leading-tight"
         data-rellax-speed="1"
+        data-rellax-percentage="0.5"
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -41,7 +42,7 @@
       </p>
     </div>
   </div>
-  <div class="inner-container px-4 py-6">
+  <div class="inner-container rellax px-4 py-6" data-rellax-speed="-1">
     <div
       class="grid grid-cols-3 grid-rows-9 gap-3 pt-2 pr-1 md:grid-cols-4 md:pr-5 md:pl-2"
     >
@@ -60,13 +61,15 @@
         <div class="relative z-0 row-span-3">
           <span
             class="rellax polygon6 absolute left-16 bottom-0 z-0 h-12 w-full bg-primary-300"
-            data-rellax-speed="-1"
+            data-rellax-speed="0.25"
+            data-rellax-percentage="0.5"
           />
         </div>
       </div>
       <div
         class="pb-50 polygon5 rellax z-10 col-span-1 row-[span_8_/_span_8] bg-primary-A400 md:col-span-1"
-        data-rellax-speed="1"
+        data-rellax-speed="0.75"
+        data-rellax-percentage="0.5"
       />
       <div class="row-span-1" />
     </div>

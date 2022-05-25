@@ -3,8 +3,9 @@
   <NavBar />
   <div class="min-w-md sm:min-w-lg mx-auto">
     <About />
-    <Obzidian />
   </div>
+  <Obzidian data-rellax-percentage="0.5" />
+
   <!-- <div
       class="text-primary-400 lg:text-stone-50 md:text-neutral-900 absolute bottom-0 w-full"
     >
