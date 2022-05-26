@@ -8,7 +8,7 @@
           <span
             class="polygon4 rellax absolute bottom-7 left-0 z-10 flex h-12 w-1/2 items-baseline justify-center bg-primary-300 py-2 pl-2 pr-6"
             zindex="1"
-            data-rellax-speed="10"
+            data-rellax-speed="8"
           />
           <div
             class="img-mask1 rellax ml-4 h-full bg-primary-400"
