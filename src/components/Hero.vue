@@ -24,7 +24,7 @@
   box-shadow: 0 15px 0 0 var(--primary-400);
 }
 </style>
-<script>
+<script lang="ts">
 // const heroParallax = document.getElementById("heroParallax");
 
 // window.addEventListener("scroll", () => {

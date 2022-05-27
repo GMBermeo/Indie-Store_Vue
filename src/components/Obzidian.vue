@@ -14,7 +14,7 @@
   <ObzidianAbout />
 </template>
 <style></style>
-<script>
+<script lang="ts">
 import ObzidianLogo from "./svg/ObzidianLogo.vue";
 import ObzidianSlide from "./Obzidian/ObzidianSlide.vue";
 import ObzidianAbout from "./Obzidian/ObzidianAbout.vue";

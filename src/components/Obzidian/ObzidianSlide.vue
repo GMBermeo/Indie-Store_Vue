@@ -8,23 +8,23 @@
         type="button"
         aria-current="true"
         aria-label="Slide 1"
-        @click="this.slide = 1"
+        @click="slide = 1"
         class="select"
-        :class="{ active: this.slide === 1 }"
+        :class="{ active: slide === 1 }"
       ></button>
       <button
         type="button"
         aria-label="Slide 2"
-        @click="this.slide = 2"
+        @click="slide = 2"
         class="select"
-        :class="{ active: this.slide === 2 }"
+        :class="{ active: slide === 2 }"
       ></button>
       <button
         type="button"
         aria-label="Slide 3"
-        @click="this.slide = 3"
+        @click="slide = 3"
         class="select"
-        :class="{ active: this.slide === 3 }"
+        :class="{ active: slide === 3 }"
       ></button>
     </div>
     <div
@@ -51,7 +51,7 @@
     <div class="foto3"></div>
   </div> -->
 </template>
-<script>
+<script lang="ts">
 export default {
   data() {
     return {

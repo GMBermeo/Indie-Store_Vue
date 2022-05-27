@@ -102,7 +102,7 @@
   /* shape-outside: polygon(0 0, 99% 0, 100% 100%, 0 50%); */
 }
 </style>
-<script>
+<script lang="ts">
 import FioLogo from "./svg/FioLogo.vue";
 import FutureWear from "./svg/FutureWear.vue";
 

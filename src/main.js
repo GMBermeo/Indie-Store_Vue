@@ -2,8 +2,7 @@ import App from "./App.vue";
 import "./assets/css/tailwind.css";
 import "./assets/css/fonts.css";
 import "./assets/css/main.css";
-// import "./modules/rellax.min.js";
-import VueRellax from "vue-rellax";
+import "./modules/rellax.min.js";
 
 import { createSSRApp } from "vue";
 
@@ -17,6 +16,7 @@ var rellax = new Rellax(".rellax", {
   },
   breakpoints: [576, 768, 1024],
 });
+
 // const app = createSSRApp({
 //   data: () => app.mount("#app"),
 // });

@@ -1681,11 +1681,6 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-rellax@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/rellax/-/rellax-1.12.1.tgz#1b433ef7ac4aa3573449a33efab391c112f6b34d"
-  integrity sha512-XBIi0CDpW5FLTujYjYBn1CIbK2CJL6TsAg/w409KghP2LucjjzBjsujXDAjyBLWgsfupfUcL5WzdnIPcGfK7XA==
-
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz"
@@ -1947,11 +1942,6 @@ toidentifier@1.0.1:
   resolved "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
 
-tslib@^2.0.1:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
-  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
-
 tsscmp@1.0.6:
   version "1.0.6"
   resolved "https://registry.npmjs.org/tsscmp/-/tsscmp-1.0.6.tgz"
@@ -2040,14 +2030,6 @@ vite@^1.0.0-rc.13:
     source-map "^0.7.3"
     vue "^3.0.3"
     ws "^7.3.1"
-
-vue-rellax@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vue-rellax/-/vue-rellax-0.2.0.tgz#b5b99c47d329c83c1a3667d4481371819c06e692"
-  integrity sha512-niisPz4i8uOSOnfKOsdZT9DdccIwkC+J7zOglvpQyMsJrBE/59R/P0fRy/E97B2SjaodMRO2NtxsNa1euJXh8Q==
-  dependencies:
-    rellax "^1.12.1"
-    tslib "^2.0.1"
 
 vue@^3.0.3, vue@^3.0.4:
   version "3.2.33"

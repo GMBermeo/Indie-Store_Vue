@@ -13,7 +13,7 @@
     </div> -->
 </template>
 
-<script>
+<script lang="ts">
 import NavBar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
@@ -26,6 +26,10 @@ export default {
     NavBar,
     About,
     Obzidian,
+  },
+  compilerOptions: {
+    // treat all tags with a dash as custom elements
+    isCustomElement: (tag) => tag.includes("-"),
   },
 };
 </script>
