@@ -1,23 +1,27 @@
 <template>
   <div class="navbar m-auto flex flex-nowrap items-end justify-center text-2xl">
-    <button
-      class="rellax polygon1 steelfish-i text-white z-20 w-36 rounded-tr-sm rounded-tl-md rounded-bl-sm bg-primary-300 pt-4 pb-2 pl-4 pr-2 tracking-wide"
-      data-rellax-speed="2"
+    <a
+      href="#About"
+      class="rellax polygon1 steelfish-i text-white z-20 w-36 rounded-tr-sm rounded-tl-md rounded-bl-sm bg-primary-300 pt-4 pb-2 pl-4 pr-2 text-center tracking-wide"
+      data-rellax-speed="1.5"
     >
-      A Fio
-    </button>
-    <button
-      class="rellax bg-stone-900 botao-meio steelfish-i text-white z-10 w-[156px] px-10 pt-2 pb-2 tracking-wide md:w-[20%]"
+      A Fio</a
+    >
+
+    <a
+      href="#Colecoes"
+      class="rellax bg-stone-900 botao-meio steelfish-i text-white z-10 w-[156px] px-10 pt-2 pb-2 text-center tracking-wide md:w-[20%]"
       data-rellax-speed="1"
     >
       Coleções
-    </button>
-    <button
-      class="rellax polygon2 steelfish-i text-white z-20 w-36 rounded-tl-sm rounded-tr-md rounded-br-sm bg-primary-500 pt-4 pb-2 tracking-wide"
+    </a>
+    <a
+      href="#Pedidos"
+      class="rellax polygon2 steelfish-i text-white z-20 w-36 rounded-tl-sm rounded-tr-md rounded-br-sm bg-primary-500 pt-4 pb-2 text-center tracking-wide"
       data-rellax-speed="2"
     >
       Pedidos
-    </button>
+    </a>
   </div>
 </template>
 

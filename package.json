@@ -1,12 +1,14 @@
 {
   "name": "fio_de_nos",
-  "version": "0.1",
+  "version": "0.2",
+  "module": "/src/modules/rellax.min.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "rellax": "^1.12.1",
     "tailwindcss": "^3.0.24",
     "vue": "^3.0.4"
   },
@@ -19,7 +21,7 @@
     "vite": "^1.0.0-rc.13"
   },
   "description": "Fio de nos - Futurewear",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "https://github.com/GMBermeo/fioZero.git",
   "author": "Guilherme Bermêo <gm@bermeo.dev>",
   "license": "MIT"

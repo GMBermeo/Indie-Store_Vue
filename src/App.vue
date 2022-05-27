@@ -6,6 +6,8 @@
   </div>
   <Obzidian data-rellax-percentage="0.5" />
 
+  <Postload />
+
   <!-- <div
       class="text-primary-400 lg:text-stone-50 md:text-neutral-900 absolute bottom-0 w-full"
     >
@@ -18,6 +20,7 @@ import NavBar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Obzidian from "./components/Obzidian.vue";
+import Postload from "./components/Postload.vue";
 
 export default {
   name: "Fio de nós",
@@ -26,6 +29,7 @@ export default {
     NavBar,
     About,
     Obzidian,
+    Postload,
   },
   compilerOptions: {
     // treat all tags with a dash as custom elements
@@ -34,13 +38,7 @@ export default {
 };
 </script>
 <style>
-body::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  content: url("./images/mockuping/pexels-cottonbro-5119398.jpg")
-    url("./images/mockuping/pexels-cottonbro-6153353.jpg");
+html {
+  scroll-behavior: smooth;
 }
 </style>

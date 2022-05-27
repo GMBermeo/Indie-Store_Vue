@@ -1,5 +1,10 @@
 <template>
   <div class="inner-container px-0">
+    <div class="col-6"></div>
+    <div class="col-6 bg-primary-A400"></div>
+  </div>
+
+  <div class="inner-container px-0">
     <div class="grid grid-cols-2 gap-3 pt-2 pl-1 pr-6 md:grid-cols-3 md:pl-2">
       <div class="col-span-1 row-span-2 md:col-span-2">
         <div class="min-h-3 relative h-full">

@@ -1,43 +1,43 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn init vite
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js add rellax-vue
 
 PATH: 
-  /opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/opt/homebrew/bin:/opt/homebrew/sbin
+  /usr/local/opt/libxml2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/opt/libxml2/bin
 
 Yarn version: 
-  1.22.17
+  1.22.18
 
 Node version: 
-  16.13.2
+  17.9.0
 
 Platform: 
-  darwin arm64
+  darwin x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:137143:13)
-      at Interface.emit (node:events:390:28)
-      at Interface._ttyWrite (node:readline:1081:16)
-      at ReadStream.onkeypress (node:readline:288:10)
-      at ReadStream.emit (node:events:390:28)
-      at emitKeys (node:internal/readline/utils:358:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
-      at ReadStream.emit (node:events:390:28)
-      at addChunk (node:internal/streams/readable:315:12)
+  Error: https://registry.yarnpkg.com/rellax-vue: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:66138:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
     "name": "fio_de_nos",
-    "version": "0.0.1",
+    "version": "0.1",
     "scripts": {
       "dev": "vite",
       "build": "vite build",
       "preview": "vite preview"
     },
     "dependencies": {
-      "vue": "^3.0.4",
-      "tailwindcss": "^3.0.24"
+      "tailwindcss": "^3.0.24",
+      "vue": "^3.0.4"
     },
     "devDependencies": {
       "@vue/compiler-sfc": "^3.0.4",
@@ -46,7 +46,12 @@ npm manifest:
       "prettier": "2.6.2",
       "prettier-plugin-tailwindcss": "^0.1.10",
       "vite": "^1.0.0-rc.13"
-    }
+    },
+    "description": "Fio de nos - Futurewear",
+    "main": "index.js",
+    "repository": "https://github.com/GMBermeo/fioZero.git",
+    "author": "Guilherme Bermêo <gm@bermeo.dev>",
+    "license": "MIT"
   }
 
 yarn manifest: 
