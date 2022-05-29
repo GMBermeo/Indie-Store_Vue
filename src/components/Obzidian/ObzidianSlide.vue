@@ -87,7 +87,15 @@ export default {
     //   setInterval(next(), 10000);
     // },
   },
-  monted() {},
+  mounted() {
+    setInterval(() => {
+      if (this.slide == 3) {
+        this.slide = 1;
+      } else {
+        this.slide++;
+      }
+    }, 8000);
+  },
 };
 </script>
 
