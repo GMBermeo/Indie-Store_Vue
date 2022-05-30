@@ -7,24 +7,32 @@
       <div
         class="md:max-w-2sxl mx-auto flex h-full w-full items-center justify-center px-6 text-center sm:max-w-lg md:px-0"
       >
-        <ObzidianLogo alt="Obzidian Collection" />
+        <ObzidianLogo
+          alt="Obzidian Collection"
+          class="rellax"
+          data-rellax-speed="-0.5"
+          data-rellax-percentage="0.4"
+        />
       </div>
     </div>
   </div>
   <ObzidianSlide />
   <ObzidianAbout />
+  <ObzidianModelos />
 </template>
 
 <script lang="ts">
 import ObzidianLogo from "./svg/ObzidianLogo.vue";
 import ObzidianSlide from "./Obzidian/ObzidianSlide.vue";
 import ObzidianAbout from "./Obzidian/ObzidianAbout.vue";
+import ObzidianModelos from "./Obzidian/ObzidianModelos.vue";
 
 export default {
   components: {
     ObzidianLogo,
     ObzidianSlide,
     ObzidianAbout,
+    ObzidianModelos,
   },
 };
 </script>

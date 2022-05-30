@@ -1,12 +1,29 @@
 <template>
   <div class="inner-container px-0">
-    <div class="col-6"></div>
-    <div class="col-6 bg-primary-A400"></div>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="col-span-1">
+        <img src="../../images/mockuping/obzidian.jpg" />
+      </div>
+      <div class="col-span-2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
+        dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+        enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+        lobortis nisl ut aliquip ex ea
+      </div>
+    </div>
   </div>
-
+  <!-- 
   <div class="inner-container px-0">
-    <div class="grid grid-cols-2 gap-3 pt-2 pl-1 pr-6 md:grid-cols-3 md:pl-2">
-      <div class="col-span-1 row-span-2 md:col-span-2">
+    
+      
         <div class="min-h-3 relative h-full">
           <span
             class="absolute bottom-7 left-0 z-10 flex h-12 w-1/2 items-baseline justify-center bg-primary-300 py-2 pl-2 pr-6"
@@ -62,7 +79,7 @@
       />
       <div class="row-span-1" />
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts">
