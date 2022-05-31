@@ -1,10 +1,9 @@
 <template>
   <Hero />
   <NavBar />
-  <div class="min-w-md sm:min-w-lg mx-auto">
-    <About />
-  </div>
-  <Obzidian data-rellax-percentage="0.5" />
+  <About />
+  <Obzidian />
+  <Footer />
 
   <Postload />
 
@@ -21,6 +20,7 @@ import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Obzidian from "./components/Obzidian.vue";
 import Postload from "./components/Postload.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "Fio de nós",
@@ -30,6 +30,7 @@ export default {
     About,
     Obzidian,
     Postload,
+    Footer,
   },
   compilerOptions: {
     // treat all tags with a dash as custom elements

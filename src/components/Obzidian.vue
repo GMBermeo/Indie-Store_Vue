@@ -16,23 +16,24 @@
       </div>
     </div>
   </div>
+
   <ObzidianSlide />
   <ObzidianAbout />
-  <ObzidianModelos />
+  <ObzidianPedidos />
 </template>
 
 <script lang="ts">
 import ObzidianLogo from "./svg/ObzidianLogo.vue";
 import ObzidianSlide from "./Obzidian/ObzidianSlide.vue";
 import ObzidianAbout from "./Obzidian/ObzidianAbout.vue";
-import ObzidianModelos from "./Obzidian/ObzidianModelos.vue";
+import ObzidianPedidos from "./Obzidian/ObzidianPedidos.vue";
 
 export default {
   components: {
     ObzidianLogo,
     ObzidianSlide,
     ObzidianAbout,
-    ObzidianModelos,
+    ObzidianPedidos,
   },
 };
 </script>
