@@ -26,9 +26,9 @@
         />
       </div>
       <p
-        class="rellax col-span-1 row-span-1 leading-tight"
+        class="rellax col-span-1 row-span-1 text-lg leading-tight"
         data-rellax-speed="1"
-        data-rellax-percentage="0.5"
+        data-rellax-percentage="0.3"
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -48,7 +48,7 @@
     >
       <div class="col-span-2 row-[span_9_/_span_9] md:col-span-3">
         <FutureWear class="row-span-3 mb-4" />
-        <p class="row-span-3 pb-16 leading-tight">
+        <p class="row-span-3 pb-16 text-lg leading-tight">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation

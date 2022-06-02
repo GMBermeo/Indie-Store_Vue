@@ -6,7 +6,7 @@
           <img src="../../images/mockuping/obzidian.jpg" />
         </div>
       </div>
-      <p class="text-justify">
+      <p class="text-justify text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
         magnam corrupti quia! Cupiditate, distinctio omnis esse nulla
         consequuntur adipisci quia aliquid quaerat repellendus et ipsum cum

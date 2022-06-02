@@ -9,14 +9,18 @@
       <div class="modelo5 card-modelo col-span-6 md:col-span-2"></div>
     </div>
   </div>
-  <div class="inner-container mb-10 px-4 sm:px-0">
-    <div class="">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+  <div class="inner-container">
+    <div class="mb-10 w-full px-4 sm:px-0">
+      <button
+        class="bg-black text-white float-right ml-3 h-12 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
+      >
+        Fazer pedido
+      </button>
+      <p class="text-lg">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+      </p>
     </div>
-    <button class="bg-black text-white h-12 w-[20rem] rounded-xl">
-      Fazer pedido
-    </button>
   </div>
 </template>
 
