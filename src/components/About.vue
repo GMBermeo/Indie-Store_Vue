@@ -19,7 +19,10 @@
       </div>
 
       <div class="flex gap-0">
-        <FioLogo class="rellax ml-4 h-16 min-w-fit" data-rellax-speed="2" />
+        <FioLogo
+          class="rellax gradient ml-4 h-16 min-w-fit"
+          data-rellax-speed="2"
+        />
         <div
           class="polygon3 rellax ml-6 h-16 w-full bg-primary-300"
           data-rellax-speed="1"
@@ -62,7 +65,7 @@
           <span
             class="rellax polygon6 absolute left-16 bottom-0 z-0 h-12 w-full bg-primary-300"
             data-rellax-speed="0.25"
-            data-rellax-percentage="0.5"
+            data-rellax-percentage="0.15"
           />
         </div>
       </div>
@@ -71,11 +74,10 @@
         data-rellax-speed="0.75"
         data-rellax-percentage="0.5"
       />
-      <div class="row-span-1" />
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .img-mask1 {
   -webkit-clip-path: polygon(4% 0, 100% 0, 81% 100%, 0% 100%);
   clip-path: polygon(4% 0, 100% 0, 81% 100%, 0% 100%);
@@ -103,13 +105,13 @@
 }
 </style>
 <script lang="ts">
-import FioLogo from "./svg/FioLogo.vue";
 import FutureWear from "./svg/FutureWear.vue";
+import FioLogo from "./svg/FioLogo.vue";
 
 export default {
   components: {
-    FioLogo,
     FutureWear,
+    FioLogo,
   },
 };
 </script>

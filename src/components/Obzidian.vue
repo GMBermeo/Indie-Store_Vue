@@ -10,8 +10,8 @@
         <ObzidianLogo
           alt="Obzidian Collection"
           class="rellax"
-          data-rellax-speed="-0.5"
-          data-rellax-percentage="0.4"
+          data-rellax-speed="-0.2"
+          data-rellax-percentage="0.3"
         />
       </div>
     </div>
