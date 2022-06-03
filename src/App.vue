@@ -1,8 +1,14 @@
 <template>
+  <CardModal
+    v-if="toggleModal"
+    v-bind="modalImage"
+    v-on:closeModal="closeModal()"
+  />
   <Hero />
   <NavBar />
   <About />
   <Obzidian />
+  <Pedidos :modelo="modelo" v-on:whenOpenPhoto="openModal($event)" />
   <Footer />
 
   <Postload />
@@ -19,8 +25,10 @@ import NavBar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Obzidian from "./components/Obzidian.vue";
+import Pedidos from "./components/Pedidos.vue";
 import Postload from "./components/Postload.vue";
 import Footer from "./components/Footer.vue";
+import CardModal from "./components/utils/CardModal.vue";
 
 export default {
   name: "Fio de nós",
@@ -29,12 +37,30 @@ export default {
     NavBar,
     About,
     Obzidian,
+    Pedidos,
     Postload,
     Footer,
+    CardModal,
   },
   compilerOptions: {
     // treat all tags with a dash as custom elements
     isCustomElement: (tag) => tag.includes("-"),
+  },
+  data() {
+    return {
+      toggleModal: false,
+      modalImage: "",
+    };
+  },
+
+  methods: {
+    openModal: function (imagem: string) {
+      this.toggleModal = !this.toggleModal;
+      this.modalImage = imagem;
+    },
+    closeModal: function () {
+      this.toggleModal = !this.toggleModal;
+    },
   },
 };
 </script>

@@ -15,7 +15,7 @@ let rellax = new Rellax(".rellax", {
   // center: true,
   callback: function (position) {
     // callback every position change
-    console.log(`Rellax: ${position.y} (x: ${position.x})`);
+    // console.log(`Rellax: ${position.y} (x: ${position.x})`);
   },
   breakpoints: [576, 768, 1024],
 });

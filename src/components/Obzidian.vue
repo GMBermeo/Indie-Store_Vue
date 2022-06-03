@@ -19,21 +19,18 @@
 
   <ObzidianSlide />
   <ObzidianAbout />
-  <ObzidianPedidos />
 </template>
 
 <script lang="ts">
 import ObzidianLogo from "./svg/ObzidianLogo.vue";
 import ObzidianSlide from "./Obzidian/ObzidianSlide.vue";
 import ObzidianAbout from "./Obzidian/ObzidianAbout.vue";
-import ObzidianPedidos from "./Obzidian/ObzidianPedidos.vue";
 
 export default {
   components: {
     ObzidianLogo,
     ObzidianSlide,
     ObzidianAbout,
-    ObzidianPedidos,
   },
 };
 </script>
