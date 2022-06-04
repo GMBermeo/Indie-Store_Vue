@@ -15,12 +15,18 @@
         >
           <FioLogo class="fill-white icone" />
           <div
-            :class="[modelo.id === modelos.length ? 'text-3xl' : 'text-2xl']"
+            :class="[
+              modelo.id === modelos.length ? 'text-3xl' : 'text-xl md:text-2xl',
+            ]"
           >
             <div>Fio de Nós</div>
             <div>{{ modelo.colecao }}</div>
           </div>
-          <div :class="[modelo.id === modelos.length ? 'text-lg' : 'text-md']">
+          <div
+            :class="[
+              modelo.id === modelos.length ? 'text-lg' : 'md:text-md text-sm',
+            ]"
+          >
             <div>{{ modelo.nome }}</div>
             <div>{{ modelo.preco }}</div>
           </div>
@@ -56,7 +62,7 @@
 }
 
 .icone {
-  @apply h-8 w-8;
+  @apply h-6 w-6 sm:h-8 sm:w-8;
 }
 </style>
 
@@ -74,35 +80,35 @@ export default {
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/src/images/mockuping/pexels-cottonbro-4904537.jpg')",
+          imagem: "url('../images/modelos/pexels-cottonbro-4904537.jpg')",
         },
         {
           id: 2,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/src/images/mockuping/pexels-cottonbro-4904563.jpg')",
+          imagem: "url('../images/modelos/pexels-cottonbro-4904563.jpg')",
         },
         {
           id: 3,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/src/images/mockuping/pexels-cottonbro-8717527.jpg')",
+          imagem: "url('../images/modelos/pexels-cottonbro-8717527.jpg')",
         },
         {
           id: 4,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/src/images/mockuping/pexels-cottonbro-10679206.jpg')",
+          imagem: "url('../images/modelos/pexels-cottonbro-10679206.jpg')",
         },
         {
           id: 5,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/src/images/mockuping/pexels-cottonbro-5120193.jpg')",
+          imagem: "url('../images/modelos/pexels-cottonbro-5120193.jpg')",
         },
       ],
     };

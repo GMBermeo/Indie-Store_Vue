@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
-    class="fill-white m-5 ml-auto h-8 w-8 ease-in-out hover:h-9 hover:w-9"
+    class="fill-white m-3 ml-auto h-6 w-6 ease-in-out sm:m-5 sm:h-8 sm:w-8"
   >
     <path
       fill-rule="evenodd"
