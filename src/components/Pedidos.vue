@@ -8,7 +8,7 @@
         :class="[modelo.id === modelos.length ? 'col-span-6' : 'col-span-3']"
         :style="{ 'background-image': modelo.imagem }"
       >
-        <FullIcon @click="openPhoto(modelo.imagem)" />
+        <FullIcon @click="openPhoto(modelo.imagem)" class="ml-auto" />
         <div
           class="card-info"
           :class="[modelo.id === modelos.length ? 'p-4 md:p-8' : 'p-4']"
@@ -80,35 +80,35 @@ export default {
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/images/modelos/pexels-cottonbro-4904537.jpg')",
+          imagem: "url('/images/mockup/pexels-cottonbro-4904537.jpg')",
         },
         {
           id: 2,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/images/modelos/pexels-cottonbro-4904563.jpg')",
+          imagem: "url('/images/mockup/pexels-cottonbro-4904563.jpg')",
         },
         {
           id: 3,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/images/modelos/pexels-cottonbro-8717527.jpg')",
+          imagem: "url('/images/mockup/pexels-cottonbro-8717527.jpg')",
         },
         {
           id: 4,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/images/modelos/pexels-cottonbro-10679206.jpg')",
+          imagem: "url('/images/mockup/pexels-cottonbro-10679206.jpg')",
         },
         {
           id: 5,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "url('/images/modelos/pexels-cottonbro-5120193.jpg')",
+          imagem: "url('/images/mockup/pexels-cottonbro-5120193.jpg')",
         },
       ],
     };

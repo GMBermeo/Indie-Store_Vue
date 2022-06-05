@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
-    class="fill-white m-3 ml-auto h-6 w-6 ease-in-out sm:m-5 sm:h-8 sm:w-8"
+    class="fill-white my-3 mr-3 h-6 w-6 ease-in-out sm:my-5 sm:mr-5 sm:h-8 sm:w-8"
   >
     <path
       fill-rule="evenodd"

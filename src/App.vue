@@ -1,7 +1,7 @@
 <template>
   <CardModal
     v-if="toggleModal"
-    v-bind="modalImage"
+    :modalImage="modalImage"
     v-on:closeModal="closeModal()"
   />
   <Hero />

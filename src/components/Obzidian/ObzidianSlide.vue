@@ -101,17 +101,17 @@ export default {
 
 <style scoped>
 .foto1 {
-  background-image: url("../../images/mockuping/pexels-cottonbro-6153562.jpg");
+  background-image: url("/images/mockup/pexels-cottonbro-6153562.jpg");
   background-position: 50% 0%;
   transition: all 1s ease-in-out;
 }
 .foto2 {
-  background-image: url("../../images/mockuping/pexels-cottonbro-5119398.jpg");
+  background-image: url("/images/mockup/pexels-cottonbro-5119398.jpg");
   background-position: 50% 30%;
   transition: all 1s ease-in-out;
 }
 .foto3 {
-  background-image: url("../../images/mockuping/pexels-cottonbro-6153353.jpg");
+  background-image: url("/images/mockup/pexels-cottonbro-6153353.jpg");
   background-position: 50% 10%;
   transition: all 1s ease-in-out;
 }

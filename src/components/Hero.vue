@@ -7,13 +7,17 @@
     >
       <div class="p-36px flex h-full w-full items-center justify-center">
         <div class="text-center">
-          <FioLogoFull class="rellax" data-rellax-speed="-2" />
+          <svg
+            src="/svg/fullLogo.svg"
+            class="fio-logo fill-white align-middle"
+          ></svg>
+          <!-- <FioLogoFull class="rellax" data-rellax-speed="-2" /> -->
         </div>
       </div>
     </div>
   </header>
 </template>
-<style>
+<style scoped>
 .herobanner {
   /* background-image: url(../assets/images/assetHero.png); */
   /* max-height: 348px; */
@@ -22,6 +26,24 @@
   border-style: solid;
   border-color: var(--primary-400);
   box-shadow: 0 15px 0 0 var(--primary-400);
+}
+.fio-logo {
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .fio-logo {
+    min-width: 200px;
+  }
+}
+@media (min-width: 480px) {
+  .fio-logo {
+    min-width: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  .fio-logo {
+    min-width: none;
+  }
 }
 </style>
 <script lang="ts">
