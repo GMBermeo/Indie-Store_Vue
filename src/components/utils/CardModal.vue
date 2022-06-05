@@ -23,7 +23,7 @@ export default {
   props: ["toggleModal", "modalImage"],
   data: () => {
     return {
-      imagemTeste: "url('../images/modelos/pexels-cottonbro-4904537.jpg')",
+      imagemTeste: "url('/images/modelos/pexels-cottonbro-4904537.jpg')",
     };
   },
   created: function () {
@@ -40,7 +40,7 @@ export default {
 </script>
 <style scoped>
 .foto {
-  background-image: "url('../images/modelos/pexels-cottonbro-4904537.jpg')";
+  background-image: "url('/images/modelos/pexels-cottonbro-4904537.jpg')";
 }
 </style>
 <style lang="postcss" scoped>
