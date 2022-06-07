@@ -1,13 +1,26 @@
 <template>
   <div class="modal-window">
-    <div class="bg-white flex w-full flex-col rounded-lg">
-      <button class="botao-fechar hover:text-white" @click="closeModal()">
-        X
-      </button>
-      <div
-        class="foto bg-cover"
-        :style="{ 'background-image': modalImage }"
-      ></div>
+    <div class="bg-white flex h-full w-full flex-col rounded-lg">
+      <div class="m-3 flex justify-between p-1">
+        <div class="text-2xl"><h1>Coleção OBZIDIAN</h1></div>
+        <div>
+          <button class="botao-fechar hover:text-white" @click="closeModal()">
+            X
+          </button>
+        </div>
+      </div>
+      <div class="overflow-auto">
+        <img :src="modalImage" class="foto object-cover" />
+
+        <div class="p-6">
+          <div>
+            <h1 class="text-4xl">Titulo</h1>
+          </div>
+          <div>
+            <p class="text-2xl">Detalhe</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="background bg-black" @click="closeModal()"></div>
@@ -28,9 +41,7 @@ export default {
 </script>
 <style scoped>
 .foto {
-  background-image: "url('/images/mockup/pexels-cottonbro-4904537.jpg')";
-  min-height: 80vh;
-  height: max-content;
+  max-width: 100%;
 }
 
 .botao-fechar {
@@ -44,13 +55,13 @@ export default {
 </style>
 <style lang="postcss" scoped>
 .modal-window {
-  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden p-3 sm:p-4 md:p-6 lg:p-8 xl:p-12;
+  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden p-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32;
 }
 .background {
   @apply fixed inset-0 z-40 h-full w-full opacity-50;
 }
 
 .botao-fechar {
-  @apply m-3 ml-auto rounded-sm border-2 border-primary-A400 px-4 text-lg text-primary-A400 hover:bg-primary-A400;
+  @apply rounded-sm border-2 border-primary-A400 px-4 text-lg text-primary-A400 hover:bg-primary-A400;
 }
 </style>
