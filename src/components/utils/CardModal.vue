@@ -2,7 +2,9 @@
   <div class="modal-window">
     <div class="bg-white flex h-full w-full flex-col rounded-lg">
       <div class="m-3 flex justify-between p-1">
-        <div class="text-2xl"><h1>Coleção OBZIDIAN</h1></div>
+        <div class="text-2xl">
+          <h1>{{ modeloEscolhido.colecao }}</h1>
+        </div>
         <div>
           <button class="botao-fechar hover:text-white" @click="closeModal()">
             X
@@ -10,14 +12,14 @@
         </div>
       </div>
       <div class="overflow-auto">
-        <img :src="modalImage" class="foto object-cover" />
+        <img :src="modeloEscolhido.foto + 'lg.jpg'" class="foto object-cover" />
 
         <div class="p-6">
           <div>
-            <h1 class="text-4xl">Titulo</h1>
+            <h1 class="text-4xl">{{ modeloEscolhido.nome }}</h1>
           </div>
           <div>
-            <p class="text-2xl">Detalhe</p>
+            <p class="text-2xl">{{ modeloEscolhido.preco }}</p>
           </div>
         </div>
       </div>
@@ -28,9 +30,11 @@
 
 <script lang="ts">
 export default {
-  props: ["modalImage"],
+  props: ["modeloEscolhido"],
   created: function () {
-    console.log(this.modalImage);
+    console.log(
+      "CardModal.vue(created) - this.modeloEscolhido " + this.modeloEscolhido
+    );
   },
   methods: {
     closeModal: function () {
@@ -62,6 +66,6 @@ export default {
 }
 
 .botao-fechar {
-  @apply rounded-sm border-2 border-primary-A400 px-4 text-lg text-primary-A400 hover:bg-primary-A400;
+  @apply rounded-md border-2 border-primary-A400 px-4 text-lg text-primary-A400 hover:bg-primary-A400;
 }
 </style>

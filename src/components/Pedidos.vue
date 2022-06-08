@@ -3,10 +3,10 @@
     <div class="galeria">
       <div
         v-for="modelo in modelos"
-        @click="openPhoto(modelo.imagem)"
+        @click="openPhoto(modelo)"
         class="card-modelo"
         :key="modelo.id"
-        :style="{ 'background-image': 'url(' + modelo.imagem + 'sm.jpg)' }"
+        :style="{ 'background-image': 'url(' + modelo.foto + 'sm.jpg)' }"
         :class="[
           modelo.id <= 2
             ? 'col-span-3'
@@ -73,42 +73,42 @@ export default {
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "/images/mockup/pexels-cottonbro-4904537-",
+          foto: "/images/mockup/pexels-cottonbro-4904537-",
         },
         {
           id: 2,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "/images/mockup/pexels-cottonbro-4904563-",
+          foto: "/images/mockup/pexels-cottonbro-4904563-",
         },
         {
           id: 3,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "/images/mockup/pexels-cottonbro-8717527-",
+          foto: "/images/mockup/pexels-cottonbro-8717527-",
         },
         {
           id: 4,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "/images/mockup/pexels-cottonbro-10679206-",
+          foto: "/images/mockup/pexels-cottonbro-10679206-",
         },
         {
           id: 5,
           nome: "Vestido preto",
           colecao: "Coleção OBZIDIAN",
           preco: "280,00",
-          imagem: "/images/mockup/pexels-cottonbro-5120193-",
+          foto: "/images/mockup/pexels-cottonbro-5120193-",
         },
       ],
     };
   },
   methods: {
-    openPhoto: function (imagem: string): void {
-      this.$emit("whenOpenPhoto", imagem);
+    openPhoto: function (modelo: Object) {
+      this.$emit("whenOpenPhoto", modelo);
     },
   },
   components: {

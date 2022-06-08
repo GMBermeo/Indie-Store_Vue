@@ -1,7 +1,7 @@
 <template>
   <CardModal
     v-if="toggleModal"
-    :modalImage="modalImage"
+    :modeloEscolhido="modeloEscolhido"
     v-on:closeModal="closeModal()"
   />
   <Hero />
@@ -49,14 +49,21 @@ export default {
   data() {
     return {
       toggleModal: false,
-      modalImage: "",
+      modeloEscolhido: {
+        id: Number,
+        nome: String,
+        colecao: String,
+        preco: String,
+        foto: String,
+      },
     };
   },
 
   methods: {
-    openModal: function (imagem: string) {
+    openModal: function (modelo: Object) {
       this.toggleModal = !this.toggleModal;
-      this.modalImage = imagem + "lg.jpg";
+      this.modeloEscolhido = modelo;
+      console.log("this.modeloEscolhido" + this.modeloEscolhido);
     },
     closeModal: function () {
       this.toggleModal = !this.toggleModal;
