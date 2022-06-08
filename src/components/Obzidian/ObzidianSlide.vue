@@ -100,29 +100,47 @@ export default {
 </script>
 
 <style scoped>
-.foto1 {
-  background-image: url("/images/mockup/pexels-cottonbro-6153562.jpg");
-  background-position: 50% 0%;
-  transition: all 1s ease-in-out;
+@media only screen and (max-width: 512px) {
+  .foto1 {
+    background-image: url("/images/mockup/pexels-cottonbro-6153562-sm.jpg");
+    background-position: 50% 0%;
+    transition: all 1s ease-in-out;
+  }
+  .foto2 {
+    background-image: url("/images/mockup/pexels-cottonbro-5119398-sm.jpg");
+    background-position: 50% 30%;
+    transition: all 1s ease-in-out;
+  }
+  .foto3 {
+    background-image: url("/images/mockup/pexels-cottonbro-6153353-sm.jpg");
+    background-position: 50% 10%;
+    transition: all 1s ease-in-out;
+  }
 }
-.foto2 {
-  background-image: url("/images/mockup/pexels-cottonbro-5119398.jpg");
-  background-position: 50% 30%;
-  transition: all 1s ease-in-out;
-}
-.foto3 {
-  background-image: url("/images/mockup/pexels-cottonbro-6153353.jpg");
-  background-position: 50% 10%;
-  transition: all 1s ease-in-out;
-}
+@media only screen and (min-width: 512px) {
+  .foto1 {
+    background-image: url("/images/mockup/pexels-cottonbro-6153562-lg.jpg");
+    background-position: 50% 0%;
+    transition: all 1s ease-in-out;
+  }
+  .foto2 {
+    background-image: url("/images/mockup/pexels-cottonbro-5119398-lg.jpg");
+    background-position: 50% 30%;
+    transition: all 1s ease-in-out;
+  }
+  .foto3 {
+    background-image: url("/images/mockup/pexels-cottonbro-6153353-lg.jpg");
+    background-position: 50% 10%;
+    transition: all 1s ease-in-out;
+  }
 
-/* button {
+  /* button {
   background-color: red;
   height: 50px;
   width: 50px;
   border-radius: 50%;
 } */
-
+}
 .active {
   background-color: #fff;
   transition: background-color 1.5s ease-in-out;

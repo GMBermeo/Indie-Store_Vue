@@ -30,7 +30,7 @@
 export default {
   props: ["modalImage"],
   created: function () {
-    console.log(this.modalImage); //prints out an empty string
+    console.log(this.modalImage);
   },
   methods: {
     closeModal: function () {

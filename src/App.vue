@@ -44,7 +44,7 @@ export default {
   },
   compilerOptions: {
     // treat all tags with a dash as custom elements
-    isCustomElement: (tag) => tag.includes("-"),
+    isCustomElement: (tag: any) => tag.includes("-"),
   },
   data() {
     return {
@@ -56,7 +56,7 @@ export default {
   methods: {
     openModal: function (imagem: string) {
       this.toggleModal = !this.toggleModal;
-      this.modalImage = imagem;
+      this.modalImage = imagem + "lg.jpg";
     },
     closeModal: function () {
       this.toggleModal = !this.toggleModal;

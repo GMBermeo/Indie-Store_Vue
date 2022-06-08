@@ -31,7 +31,7 @@
       <p
         class="rellax col-span-1 row-span-1 text-lg leading-tight"
         data-rellax-speed="1"
-        data-rellax-percentage="0.3"
+        data-rellax-percentage="0.4"
       >
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

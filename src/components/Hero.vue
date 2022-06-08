@@ -7,10 +7,10 @@
     >
       <div class="p-36px flex h-full w-full items-center justify-center">
         <div class="text-center">
-          <svg
+          <img
             src="/svg/fullLogo.svg"
             class="fio-logo fill-white align-middle"
-          ></svg>
+          />
           <!-- <FioLogoFull class="rellax" data-rellax-speed="-2" /> -->
         </div>
       </div>

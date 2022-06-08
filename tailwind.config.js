@@ -21,8 +21,8 @@ module.exports = {
       },
     },
     backgroundImage: {
-      "header-hero": "url('images/assetHero.png')",
-      "obzidian-pattern": "url('images/obzidianPattern.png')",
+      "header-hero": "url('/images/mockup/tailwind/assetHero.jpg')",
+      "obzidian-pattern": "url('/images/mockup/tailwind/obzidianPattern.png')",
     },
   },
   plugins: [],
