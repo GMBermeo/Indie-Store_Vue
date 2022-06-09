@@ -74,7 +74,7 @@
         xlink:href="#Branco_preto"
       />
       <linearGradient
-        id="Gradiente_sem_nome_35"
+        id="Gradiente_sem_name_35"
         x1="574.89"
         y1="-6.33"
         x2="549.56"
@@ -285,7 +285,7 @@
   fill: url(#Branco_preto-8);
 }
 .cls-9 {
-  fill: url(#Gradiente_sem_nome_35);
+  fill: url(#Gradiente_sem_name_35);
 }
 .cls-10 {
   mask: url(#mask);

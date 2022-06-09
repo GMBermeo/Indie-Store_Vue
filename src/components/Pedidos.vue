@@ -6,7 +6,7 @@
         @click="openPhoto(modelo)"
         class="card-modelo"
         :key="modelo.id"
-        :style="{ 'background-image': 'url(' + modelo.foto + 'sm.jpg)' }"
+        :style="{ 'background-image': 'url(' + modelo.foto[0] + 'sm.jpg)' }"
         :class="[
           modelo.id <= 2
             ? 'col-span-3'
@@ -29,7 +29,9 @@
             ]"
           >
             <div>Fio de Nós</div>
-            <div>{{ modelo.colecao }}</div>
+            <div>
+              {{ lang == "br" ? modelo.colecao.br : modelo.colecao.en }}
+            </div>
           </div>
           <div
             :class="[
@@ -37,8 +39,8 @@
               'md:text-base',
             ]"
           >
-            <div>{{ modelo.nome }}</div>
-            <div>{{ modelo.preco }}</div>
+            <div>{{ lang == "br" ? modelo.nome.br : modelo.nome.en }}</div>
+            <div>{{ lang == "br" ? modelo.preco.br : modelo.preco.en }}</div>
           </div>
         </div>
       </div>
@@ -64,44 +66,51 @@ import FullIcon from "./svg/FullIcon.vue";
 import FioLogo from "./svg/FioLogo.vue";
 
 export default {
+  props: ["lang"],
   data: () => {
     return {
       // toggleModal: false,
       modelos: [
         {
           id: 1,
-          nome: "Vestido preto",
-          colecao: "Coleção OBZIDIAN",
-          preco: "280,00",
-          foto: "/images/mockup/pexels-cottonbro-4904537-",
+          nome: { br: "Cyberleather Chrome", en: "Cyberleather Concrete" },
+          colecao: { br: "Coleção OBZIDIAN", en: "Obzidian collection" },
+          preco: { br: "280,00", en: "$ 90.00" },
+          foto: [
+            "/images/mockup/pexels-cottonbro-4904537-",
+            "/images/mockup/pexels-cottonbro-4904563-",
+          ],
         },
         {
           id: 2,
-          nome: "Vestido preto",
-          colecao: "Coleção OBZIDIAN",
-          preco: "280,00",
-          foto: "/images/mockup/pexels-cottonbro-4904563-",
+          nome: { br: "Weary Neon Insects", en: "Weary Neon Insects" },
+          colecao: { br: "Coleção OBZIDIAN", en: "Obzidian collection" },
+          preco: { br: "250,00", en: "$ 70.00" },
+          foto: ["/images/mockup/pexels-cottonbro-4904563-"],
         },
         {
           id: 3,
-          nome: "Vestido preto",
-          colecao: "Coleção OBZIDIAN",
-          preco: "280,00",
-          foto: "/images/mockup/pexels-cottonbro-8717527-",
+          nome: {
+            br: "Tranquil Coded Peace",
+            en: "Tranquil Coded Peace",
+          },
+          colecao: { br: "Coleção OBZIDIAN", en: "Obzidian collection" },
+          preco: { br: "380,00", en: "$ 135.00" },
+          foto: ["/images/mockup/pexels-cottonbro-8717527-"],
         },
         {
           id: 4,
-          nome: "Vestido preto",
-          colecao: "Coleção OBZIDIAN",
-          preco: "280,00",
-          foto: "/images/mockup/pexels-cottonbro-10679206-",
+          nome: { br: "Paintings made away", en: "Paintings made away" },
+          colecao: { br: "Coleção DUNE", en: "Dune collection" },
+          preco: { br: "120,00", en: "$ 49.00" },
+          foto: ["/images/mockup/pexels-cottonbro-10679206-"],
         },
         {
           id: 5,
-          nome: "Vestido preto",
-          colecao: "Coleção OBZIDIAN",
-          preco: "280,00",
-          foto: "/images/mockup/pexels-cottonbro-5120193-",
+          nome: { br: "Stranded Sands", en: "Stranded Sands" },
+          colecao: { br: "Coleção DUNE", en: "Dune collection" },
+          preco: { br: "320,00", en: "$ 120.00" },
+          foto: ["/images/mockup/pexels-cottonbro-5120193-"],
         },
       ],
     };

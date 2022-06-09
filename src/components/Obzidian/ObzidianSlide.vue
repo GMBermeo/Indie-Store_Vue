@@ -47,8 +47,8 @@
     </button> -->
   </div>
   <!-- <div class="absolute top-0 right-0 bottom-0 left-0">
-    <div class="foto2"></div>
-    <div class="foto3"></div>
+    <div class="photo2"></div>
+    <div class="photo3"></div>
   </div> -->
 </template>
 <script lang="ts">
@@ -62,9 +62,9 @@ export default {
   computed: {
     classObject() {
       return {
-        foto1: this.slide === 1,
-        foto2: this.slide === 2,
-        foto3: this.slide === 3,
+        photo1: this.slide === 1,
+        photo2: this.slide === 2,
+        photo3: this.slide === 3,
       };
     },
   },
@@ -101,34 +101,34 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 512px) {
-  .foto1 {
+  .photo1 {
     background-image: url("/images/mockup/pexels-cottonbro-6153562-sm.jpg");
     background-position: 50% 0%;
     transition: all 1s ease-in-out;
   }
-  .foto2 {
+  .photo2 {
     background-image: url("/images/mockup/pexels-cottonbro-5119398-sm.jpg");
     background-position: 50% 30%;
     transition: all 1s ease-in-out;
   }
-  .foto3 {
+  .photo3 {
     background-image: url("/images/mockup/pexels-cottonbro-6153353-sm.jpg");
     background-position: 50% 10%;
     transition: all 1s ease-in-out;
   }
 }
 @media only screen and (min-width: 512px) {
-  .foto1 {
+  .photo1 {
     background-image: url("/images/mockup/pexels-cottonbro-6153562-lg.jpg");
     background-position: 50% 0%;
     transition: all 1s ease-in-out;
   }
-  .foto2 {
+  .photo2 {
     background-image: url("/images/mockup/pexels-cottonbro-5119398-lg.jpg");
     background-position: 50% 30%;
     transition: all 1s ease-in-out;
   }
-  .foto3 {
+  .photo3 {
     background-image: url("/images/mockup/pexels-cottonbro-6153353-lg.jpg");
     background-position: 50% 10%;
     transition: all 1s ease-in-out;

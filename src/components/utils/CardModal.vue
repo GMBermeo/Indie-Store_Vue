@@ -12,7 +12,10 @@
         </div>
       </div>
       <div class="overflow-auto">
-        <img :src="modeloEscolhido.foto + 'lg.jpg'" class="foto object-cover" />
+        <img
+          :src="modeloEscolhido.foto[0] + 'lg.jpg'"
+          class="foto object-cover"
+        />
 
         <div class="p-6">
           <div>

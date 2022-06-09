@@ -8,7 +8,11 @@
   <NavBar />
   <About />
   <Obzidian />
-  <Pedidos :modelo="modelo" v-on:whenOpenPhoto="openModal($event)" />
+  <Pedidos
+    :modelo="modelo"
+    :lang="lang"
+    v-on:whenOpenPhoto="openModal($event)"
+  />
   <Footer />
 
   <Postload />
@@ -42,10 +46,6 @@ export default {
     Footer,
     CardModal,
   },
-  compilerOptions: {
-    // treat all tags with a dash as custom elements
-    isCustomElement: (tag: any) => tag.includes("-"),
-  },
   data() {
     return {
       toggleModal: false,
@@ -58,12 +58,25 @@ export default {
       },
     };
   },
-
+  computed: {
+    lang: function () {
+      if (navigator.language.split("-")[0] === "pt") {
+        return "br";
+      } else {
+        return "en";
+      }
+    },
+  },
+  compilerOptions: {
+    // treat all tags with a dash as custom elements
+    isCustomElement: (tag: any) => tag.includes("-"),
+  },
   methods: {
     openModal: function (modelo: Object) {
       this.toggleModal = !this.toggleModal;
       this.modeloEscolhido = modelo;
       console.log("this.modeloEscolhido" + this.modeloEscolhido);
+      console.log("locale:" + navigator.language.split("-")[0]);
     },
     closeModal: function () {
       this.toggleModal = !this.toggleModal;
