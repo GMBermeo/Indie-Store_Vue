@@ -1,15 +1,16 @@
 <template>
   <CardModal
     v-if="toggleModal"
-    :modeloEscolhido="modeloEscolhido"
+    :selectedProduct="selectedProduct"
+    :lang="lang"
     v-on:closeModal="closeModal()"
   />
   <Hero />
   <NavBar />
   <About />
   <Obzidian />
-  <Pedidos
-    :modelo="modelo"
+  <Products
+    :product="product"
     :lang="lang"
     v-on:whenOpenPhoto="openModal($event)"
   />
@@ -29,7 +30,7 @@ import NavBar from "./components/NavBar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
 import Obzidian from "./components/Obzidian.vue";
-import Pedidos from "./components/Pedidos.vue";
+import Products from "./components/Products.vue";
 import Postload from "./components/Postload.vue";
 import Footer from "./components/Footer.vue";
 import CardModal from "./components/utils/CardModal.vue";
@@ -41,7 +42,7 @@ export default {
     NavBar,
     About,
     Obzidian,
-    Pedidos,
+    Products,
     Postload,
     Footer,
     CardModal,
@@ -49,12 +50,12 @@ export default {
   data() {
     return {
       toggleModal: false,
-      modeloEscolhido: {
+      selectedProduct: {
         id: Number,
-        nome: String,
-        colecao: String,
-        preco: String,
-        foto: String,
+        name: String,
+        collection: String,
+        price: String,
+        photos: String,
       },
     };
   },
@@ -72,11 +73,12 @@ export default {
     isCustomElement: (tag: any) => tag.includes("-"),
   },
   methods: {
-    openModal: function (modelo: Object) {
+    openModal: function (product: Object) {
       this.toggleModal = !this.toggleModal;
-      this.modeloEscolhido = modelo;
-      console.log("this.modeloEscolhido" + this.modeloEscolhido);
-      console.log("locale:" + navigator.language.split("-")[0]);
+      this.selectedProduct = product;
+      console.log("App.vue - this.selectedProduct:");
+      console.log(this.selectedProduct);
+      console.log("locale: " + navigator.language.split("-")[0]);
     },
     closeModal: function () {
       this.toggleModal = !this.toggleModal;

@@ -52,14 +52,18 @@
       <div class="col-span-2 row-[span_9_/_span_9] md:col-span-3">
         <FutureWear class="row-span-3 mb-4" />
         <p class="row-span-3 pb-16 text-lg leading-tight">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te
+          In vitae placerat purus, nec consequat tortor. Duis eget varius est,
+          ac consequat est. Integer ut ligula at lorem porta ultricies. Integer
+          odio nunc, accumsan vitae eros id, congue sodales sapien. Sed sagittis
+          sapien sed dui faucibus rutrum. Nulla ac lorem elementum, finibus mi
+          in, scelerisque metus. Duis scelerisque velit eget malesuada
+          porttitor. Donec ultrices nibh ut odio aliquet, nec ultricies mi
+          varius. Ut finibus, magna nec gravida consequat, enim purus pulvinar
+          nunc, vitae dictum arcu ex ac urna. Praesent tristique, magna a
+          vestibulum tempor, mi dui vulputate nisi, at laoreet risus leo id
+          magna. Nam augue ex, tempus vel euismod sed, efficitur sed metus.
+          Curabitur a urna nisi. Nunc egestas tortor vel lacus bibendum
+          scelerisque.
         </p>
         <div class="relative z-0 row-span-3">
           <span

@@ -2,7 +2,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.68 113.23">
     <defs>
       <linearGradient
-        id="DegradeVermelho"
+        id="RedGradient"
         y1="56.61"
         x2="81.68"
         y2="56.61"
@@ -19,6 +19,6 @@
 </template>
 <style scoped>
 .gradient {
-  fill: url(#DegradeVermelho);
+  fill: url(#RedGradient);
 }
 </style>

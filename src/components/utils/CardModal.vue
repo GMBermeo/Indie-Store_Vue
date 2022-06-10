@@ -3,26 +3,60 @@
     <div class="bg-white flex h-full w-full flex-col rounded-lg">
       <div class="m-3 flex justify-between p-1">
         <div class="text-2xl">
-          <h1>{{ modeloEscolhido.colecao }}</h1>
+          <h1>
+            {{
+              lang == "br"
+                ? selectedProduct.collection.br
+                : selectedProduct.collection.en
+            }}
+          </h1>
         </div>
         <div>
-          <button class="botao-fechar hover:text-white" @click="closeModal()">
+          <button class="close-btn hover:text-white" @click="closeModal()">
             X
           </button>
         </div>
       </div>
       <div class="overflow-auto">
         <img
-          :src="modeloEscolhido.foto[0] + 'lg.jpg'"
-          class="foto object-cover"
+          v-for="photo in selectedProduct.photos"
+          :key="selectedProduct.photos.indexOf(photo)"
+          :src="'/images/mockup' + photo + 'lg.jpg'"
+          class="photo object-cover"
+          :class="[
+            selectedProduct.photos.indexOf(photo) != 1 ? '' : 'mt-2 md:mt-4',
+          ]"
         />
 
         <div class="p-6">
           <div>
-            <h1 class="text-4xl">{{ modeloEscolhido.nome }}</h1>
+            <h1 class="mb-4 text-4xl underline decoration-primary-A400">
+              {{
+                lang == "br" ? selectedProduct.name.br : selectedProduct.name.en
+              }}
+            </h1>
           </div>
-          <div>
-            <p class="text-2xl">{{ modeloEscolhido.preco }}</p>
+          <div class="mb-4 font-sans text-lg">
+            {{
+              lang == "br"
+                ? selectedProduct.description.br
+                : selectedProduct.description.en
+            }}
+          </div>
+
+          <div class="flex justify-between">
+            <p class="self-center text-2xl">
+              {{
+                lang == "br"
+                  ? selectedProduct.price.br
+                  : selectedProduct.price.en
+              }}
+            </p>
+            <button
+              class="bg-black text-white float-right ml-3 h-12 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
+            >
+              {{ lang == "br" ? "Fazer pedido" : "Place order" }}
+            </button>
           </div>
         </div>
       </div>
@@ -33,11 +67,11 @@
 
 <script lang="ts">
 export default {
-  props: ["modeloEscolhido"],
+  props: ["selectedProduct", "lang"],
   created: function () {
-    console.log(
-      "CardModal.vue(created) - this.modeloEscolhido " + this.modeloEscolhido
-    );
+    console.log("CardModal.vue(created) - this.selectedProduct ");
+    console.log(this.selectedProduct);
+    console.log("locale: " + this.lang);
   },
   methods: {
     closeModal: function () {
@@ -47,15 +81,15 @@ export default {
 };
 </script>
 <style scoped>
-.foto {
+.photo {
   max-width: 100%;
 }
 
-.botao-fechar {
+.close-btn {
   background-color: transparent;
   transition: all 0.5s ease-in-out;
 }
-.botao-fechar:hover {
+.close-btn:hover {
   color: white;
   transition: all 0.1s ease-in-out;
 }
@@ -68,7 +102,7 @@ export default {
   @apply fixed inset-0 z-40 h-full w-full opacity-50;
 }
 
-.botao-fechar {
+.close-btn {
   @apply rounded-md border-2 border-primary-A400 px-4 text-lg text-primary-A400 hover:bg-primary-A400;
 }
 </style>
