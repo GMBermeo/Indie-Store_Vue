@@ -1,6 +1,6 @@
 <template>
   <div class="modal-window">
-    <div class="bg-white flex h-full w-full flex-col rounded-lg">
+    <div class="bg-white mb-4 flex h-full w-full flex-col rounded-lg">
       <div class="m-3 flex justify-between p-1">
         <div class="text-2xl">
           <h1>
@@ -24,11 +24,11 @@
           :src="'/images/mockup' + photo + 'lg.jpg'"
           class="photo object-cover"
           :class="[
-            selectedProduct.photos.indexOf(photo) != 1 ? '' : 'mt-2 md:mt-4',
+            selectedProduct.photos.indexOf(photo) == 0 ? '' : 'mt-2 md:mt-4',
           ]"
         />
 
-        <div class="p-6">
+        <div class="px-6 pb-6 pt-4 md:pt-6">
           <div>
             <h1 class="mb-4 text-4xl underline decoration-primary-A400">
               {{
@@ -96,7 +96,7 @@ export default {
 </style>
 <style lang="postcss" scoped>
 .modal-window {
-  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden p-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32;
+  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden px-3 pt-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32;
 }
 .background {
   @apply fixed inset-0 z-40 h-full w-full opacity-50;
