@@ -38,8 +38,8 @@
 </template>
 
 <script lang="ts">
-import FioLogo from "./svg/FioLogo.vue";
-export default { components: { FioLogo } };
+import Logo from "./svg/Logo.vue";
+export default { components: { Logo } };
 </script>
 
 <style lang="postcss" scoped>

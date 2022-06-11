@@ -19,7 +19,7 @@
       </div>
 
       <div class="flex gap-0">
-        <FioLogo
+        <Logo
           class="rellax gradient ml-4 h-16 min-w-fit"
           data-rellax-speed="2"
         />
@@ -50,7 +50,7 @@
       class="grid grid-cols-3 grid-rows-9 gap-3 pt-2 pr-1 md:grid-cols-4 md:pr-5 md:pl-2"
     >
       <div class="col-span-2 row-[span_9_/_span_9] md:col-span-3">
-        <FutureWear class="row-span-3 mb-4" />
+        <img src="/svg/futurewear.svg" class="row-span-3 mb-4" />
         <p class="row-span-3 pb-16 text-lg leading-tight">
           In vitae placerat purus, nec consequat tortor. Duis eget varius est,
           ac consequat est. Integer ut ligula at lorem porta ultricies. Integer
@@ -109,13 +109,11 @@
 }
 </style>
 <script lang="ts">
-import FutureWear from "./svg/FutureWear.vue";
-import FioLogo from "./svg/FioLogo.vue";
+import Logo from "./svg/Logo.vue";
 
 export default {
   components: {
-    FutureWear,
-    FioLogo,
+    Logo,
   },
 };
 </script>

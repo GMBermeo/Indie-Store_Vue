@@ -259,6 +259,12 @@
     </g>
   </svg>
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "ObzidianLogo",
+});
+</script>
 <style>
 .cls-1 {
   fill: url(#Branco_preto);

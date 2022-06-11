@@ -17,6 +17,12 @@
     />
   </svg>
 </template>
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "Logo",
+});
+</script>
 <style scoped>
 .gradient {
   fill: url(#RedGradient);

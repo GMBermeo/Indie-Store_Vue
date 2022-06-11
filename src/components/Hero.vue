@@ -11,7 +11,7 @@
             src="/svg/fullLogo.svg"
             class="fio-logo fill-white align-middle"
           />
-          <!-- <FioLogoFull class="rellax" data-rellax-speed="-2" /> -->
+          <!-- <LogoFull class="rellax" data-rellax-speed="-2" /> -->
         </div>
       </div>
     </div>
@@ -47,15 +47,5 @@
 }
 </style>
 <script lang="ts">
-// const heroParallax = document.getElementById("heroParallax");
-
-// window.addEventListener("scroll", () => {
-//   heroParallax.style.backgroundPositionY = -window.scrollY / 2 + "px";
-// });
-import FioLogoFull from "./svg/FioLogoFull.vue";
-export default {
-  components: {
-    FioLogoFull,
-  },
-};
+export default {};
 </script>
