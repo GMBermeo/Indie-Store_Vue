@@ -3,12 +3,14 @@
     <div class="gallery">
       <div
         v-for="product in products"
-        @click="openPhoto(product)"
+        @click="$emit('whenOpenPhoto', product)"
         class="card-product"
         :key="product.id"
         :style="{
           'background-image':
-            'url(/images/mockup' + product.photos[0] + 'sm.jpg)',
+            product.id == products.length
+              ? 'url(/images/mockup' + product.photos[0] + 'lg.jpg)'
+              : 'url(/images/mockup' + product.photos[0] + 'sm.jpg)',
         }"
         :class="[
           product.id <= 2
@@ -19,12 +21,12 @@
               ],
         ]"
       >
-        <img src="/svg/iconFull.svg" class="fill-white full-icon ml-auto" />
+        <img src="/svg/iconFull.svg" class="full-icon ml-auto" />
         <div
           class="card-info md:p-4"
           :class="[product.id === products.length ? 'p-8' : 'p-4']"
         >
-          <Logo class="fill-white icon" />
+          <img src="/svg/logo-mono.svg" class="icon" />
           <div
             :class="[
               product.id === products.length ? 'text-3xl' : 'text-xl',
@@ -53,6 +55,7 @@
     <div class="mb-10 w-full px-4 sm:px-0">
       <button
         class="bg-black text-white float-right ml-3 h-16 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
+        @click="$emit('placeOrder')"
       >
         {{ lang == "br" ? "Fazer pedido" : "Place order" }}
       </button>
@@ -72,18 +75,8 @@
 </template>
 
 <script lang="ts">
-import Logo from "./svg/Logo.vue";
-
 export default {
   props: ["lang", "products"],
-  methods: {
-    openPhoto: function (product: Object) {
-      this.$emit("whenOpenPhoto", product);
-    },
-  },
-  components: {
-    Logo,
-  },
 };
 </script>
 <style scoped>
@@ -94,6 +87,7 @@ export default {
   cursor: pointer;
   transition: opacity 0.5s ease-in-out;
 }
+
 @media (hover: hover) {
   .card-info:hover {
     opacity: 1;

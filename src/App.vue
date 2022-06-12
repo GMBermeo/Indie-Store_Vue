@@ -4,6 +4,7 @@
     :selectedProduct="selectedProduct"
     :lang="lang"
     v-on:closeModal="closeModal()"
+    v-on:placeOrder="placeOrder($event)"
   />
   <Hero />
   <NavBar />
@@ -13,8 +14,9 @@
     :products="products"
     :lang="lang"
     v-on:whenOpenPhoto="openModal($event)"
+    v-on:placeOrder="placeOrder($event)"
   />
-  <Footer />
+  <Footer :whatsapp="whatsapp" />
 
   <Postload />
 
@@ -72,10 +74,26 @@ export default {
     closeModal: function () {
       this.toggleModal = !this.toggleModal;
     },
+    placeOrder: function (product: any) {
+      if (product != undefined) {
+        if (this.lang == "br") {
+          console.log(
+            "Tenho interesse no item: ",
+            product.name.br,
+            "da coleção ",
+            product.collection.br
+          );
+        } else {
+          console.log("placeOrder");
+          window.open("https://jakearchibald.github.io/svgomg/", "_blank");
+        }
+      }
+    },
   },
   data() {
     return {
       toggleModal: false,
+      whatsapp: "556199922299",
       selectedProduct: {
         id: Number,
         name: String,
@@ -121,7 +139,7 @@ export default {
             br: "Tranquil Coded Peace",
             en: "Tranquil Coded Peace",
           },
-          collection: { br: "Coleção OBZIDIAN", en: "Obzidian collection" },
+          collection: { br: "Coleção MARBLE", en: "Marble collection" },
           price: { br: "380,00", en: "$ 135.00" },
           description: {
             br: "Phasellus tincidunt justo quam, nec eleifend nulla vehicula vitae. Pellentesque nec sapien eu sem posuere commodo at eu massa. In ullamcorper luctus velit. Donec sagittis, sapien non pretium pulvinar, arcu elit mattis est, a cursus mi est ac tortor. Integer porttitor metus et mi ultrices, sed dictum nisl varius. Donec quis justo ac mauris laoreet porttitor. Etiam consectetur fringilla lectus, in gravida tortor interdum ac. Suspendisse porttitor consequat purus. Nunc odio velit, ullamcorper quis vulputate non, commodo quis magna. Aliquam eget elementum nunc. Nulla facilisi. Vestibulum pellentesque pretium arcu, faucibus viverra ligula placerat ac. Nullam mollis auctor est, in accumsan eros hendrerit eu. In sem justo, feugiat et aliquam sed, accumsan sit amet mi.",
@@ -137,7 +155,7 @@ export default {
         {
           id: 4,
           name: { br: "Paintings made away", en: "Paintings made away" },
-          collection: { br: "Coleção DUNE", en: "Dune collection" },
+          collection: { br: "Coleção TOPAZ", en: "Topaz collection" },
           price: { br: "120,00", en: "$ 49.00" },
           description: {
             br: "Etiam lacinia iaculis massa vel iaculis. Nunc gravida sem et ipsum vestibulum finibus. Donec vulputate justo ante, ut sollicitudin ligula gravida eget. Integer euismod posuere mi quis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut felis est, tempus in velit id, malesuada rutrum nisl. In leo orci, feugiat vitae ultricies sed, congue eget quam. Donec sed libero varius, pellentesque mauris ut, scelerisque est. Vivamus in est sit amet est commodo elementum ac eget massa.",

@@ -12,7 +12,10 @@
           </h1>
         </div>
         <div>
-          <button class="close-btn hover:text-white" @click="closeModal()">
+          <button
+            class="close-btn hover:text-white"
+            @click="$emit('closeModal')"
+          >
             X
           </button>
         </div>
@@ -54,6 +57,7 @@
             </p>
             <button
               class="bg-black text-white float-right ml-3 h-12 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
+              @click="$emit('placeOrder', selectedProduct)"
             >
               {{ lang == "br" ? "Fazer pedido" : "Place order" }}
             </button>
@@ -72,11 +76,6 @@ export default {
     console.log("CardModal.vue(created) - this.selectedProduct ");
     console.log(this.selectedProduct);
     console.log("locale: " + this.lang);
-  },
-  methods: {
-    closeModal: function () {
-      this.$emit("closeModal");
-    },
   },
 };
 </script>

@@ -16,8 +16,7 @@
         finibus, magna nec gravida consequat, enim purus pulvinar nunc, vitae
         dictum arcu ex ac urna. Praesent tristique, magna a vestibulum tempor,
         mi dui vulputate nisi, at laoreet risus leo id magna. Nam augue ex,
-        tempus vel euismod sed, efficitur sed metus. Curabitur a urna nisi. Nunc
-        egestas tortor vel lacus bibendum scelerisque.
+        tempus vel euismod sed, efficitur sed metus.
       </p>
     </div>
   </div>

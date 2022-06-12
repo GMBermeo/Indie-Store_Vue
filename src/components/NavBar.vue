@@ -5,7 +5,7 @@
       class="rellax polygon1 steelfish-i text-white z-20 w-36 rounded-tr-sm rounded-tl-md rounded-bl-sm bg-primary-300 pt-4 pb-2 pl-4 pr-2 text-center tracking-wide"
       data-rellax-speed="1.5"
     >
-      A Fio</a
+      {{ lang == "br" ? "A Fio" : "About" }}</a
     >
 
     <a
@@ -13,18 +13,17 @@
       class="rellax bg-stone-900 botao-meio steelfish-i text-white z-10 w-[156px] px-10 pt-2 pb-2 text-center tracking-wide md:w-[20%]"
       data-rellax-speed="1"
     >
-      Coleções
+      {{ lang == "br" ? "Coleções" : "Collections" }}
     </a>
     <a
       href="#Pedidos"
       class="rellax polygon2 steelfish-i text-white z-20 w-36 rounded-tl-sm rounded-tr-md rounded-br-sm bg-primary-500 pt-4 pb-2 text-center tracking-wide"
       data-rellax-speed="2"
     >
-      Pedidos
+      {{ lang == "br" ? "Pedidos" : "Products" }}
     </a>
   </div>
 </template>
-
 <style>
 .navbar {
   color: white;
@@ -50,3 +49,8 @@
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 </style>
+<script lang="ts">
+export default {
+  props: ["lang"],
+};
+</script>

@@ -19,7 +19,8 @@
       </div>
 
       <div class="flex gap-0">
-        <Logo
+        <img
+          src="/svg/logo.svg"
           class="rellax gradient ml-4 h-16 min-w-fit"
           data-rellax-speed="2"
         />
@@ -109,11 +110,5 @@
 }
 </style>
 <script lang="ts">
-import Logo from "./svg/Logo.vue";
-
-export default {
-  components: {
-    Logo,
-  },
-};
+export default {};
 </script>
