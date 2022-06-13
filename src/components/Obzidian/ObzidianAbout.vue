@@ -7,16 +7,7 @@
         </div>
       </div>
       <p class="text-justify text-lg">
-        In vitae placerat purus, nec consequat tortor. Duis eget varius est, ac
-        consequat est. Integer ut ligula at lorem porta ultricies. Integer odio
-        nunc, accumsan vitae eros id, congue sodales sapien. Sed sagittis sapien
-        sed dui faucibus rutrum. Nulla ac lorem elementum, finibus mi in,
-        scelerisque metus. Duis scelerisque velit eget malesuada porttitor.
-        Donec ultrices nibh ut odio aliquet, nec ultricies mi varius. Ut
-        finibus, magna nec gravida consequat, enim purus pulvinar nunc, vitae
-        dictum arcu ex ac urna. Praesent tristique, magna a vestibulum tempor,
-        mi dui vulputate nisi, at laoreet risus leo id magna. Nam augue ex,
-        tempus vel euismod sed, efficitur sed metus.
+        {{ text.collection }}
       </p>
     </div>
   </div>
@@ -32,5 +23,7 @@
 </template> -->
 
 <script lang="ts">
-export default {};
+export default {
+  props: ["text"],
+};
 </script>

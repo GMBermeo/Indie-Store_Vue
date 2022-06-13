@@ -19,7 +19,7 @@
   </div>
 
   <ObzidianSlide />
-  <ObzidianAbout />
+  <ObzidianAbout :text="text" />
 </template>
 
 <script lang="ts">
@@ -31,6 +31,7 @@ export default {
     ObzidianSlide,
     ObzidianAbout,
   },
+  props: ["text"],
 };
 </script>
 <style scoped></style>

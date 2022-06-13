@@ -60,15 +60,7 @@
         {{ lang == "br" ? "Fazer pedido" : "Place order" }}
       </button>
       <p class="text-lg">
-        Integer suscipit velit eget neque vulputate congue. Donec auctor
-        pulvinar tortor quis cursus. Sed consectetur facilisis metus dictum
-        placerat. Morbi sollicitudin congue pellentesque. Integer posuere quis
-        tortor vitae molestie. Proin elit erat, ultricies porttitor maximus
-        eget, finibus at dolor. Aliquam erat volutpat. Sed lobortis eros nec
-        velit sollicitudin elementum. Nulla mi eros, mollis et arcu quis,
-        posuere interdum turpis. Aliquam ut porttitor lacus. Maecenas ut
-        porttitor nisl. Nullam pharetra elit ut cursus congue. Nam ut lorem
-        eros.
+        {{ text.products }}
       </p>
     </div>
   </div>
@@ -76,7 +68,7 @@
 
 <script lang="ts">
 export default {
-  props: ["lang", "products"],
+  props: ["lang", "products", "text"],
 };
 </script>
 <style scoped>
