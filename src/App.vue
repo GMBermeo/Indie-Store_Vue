@@ -80,22 +80,23 @@ export default {
     closeModal: function (this: any) {
       this.toggleModal = !this.toggleModal;
     },
-    placeOrder: function (product: any, text: any) {
+    placeOrder: function (this: any, product: any) {
       if (product != undefined) {
+        console.log(this.text.whatsappMessage);
         window.open(
           "https://wa.me/" +
             data.whatsapp +
             "?text=" +
             encodeURIComponent(
-              text.whatsappMessage.p1 +
+              this.text.whatsappMessage.p1 +
                 product.name +
-                text.whatsappMessage.p2 +
+                this.text.whatsappMessage.p2 +
                 product.collection
             ),
           "_blank"
         );
       } else {
-        window.open("https://wa.me/556199922299", "_blank");
+        window.open("https://wa.me/" + data.whatsapp, "_blank");
       }
     },
   },

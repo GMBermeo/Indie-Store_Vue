@@ -35,7 +35,7 @@
     min-width: 200px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 512px) {
   .fio-logo {
     min-width: 480px;
   }
