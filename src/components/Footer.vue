@@ -9,11 +9,13 @@
         </div>
         <div class="mt-5 mr-0 font-sans md:mr-5">
           <a href="https://www.instagram.com/fiofuturewear/" class="mb-2 flex">
-            <img src="/svg/social/instagram.svg" class="icon" />@fiofuturewear
+            <img src="/svg/social/instagram.svg" class="icon" />@{{
+              data.instagram
+            }}
           </a>
           <a href="https://wa.me/556199922299" class="mb-2 flex text-lg"
             ><img src="/svg/social/whatsapp.svg" class="icon" />
-            {{ lang == "br" ? "61 9992-2299" : whatsapp }}
+            {{ formatedNumber }}
           </a>
           <div class="text-sm text-primary-400">
             Máquina && <a href="http://bermeo.dev">[]Balde</a>
@@ -29,7 +31,32 @@
 
 <script lang="ts">
 export default {
-  props: ["lang", "whatsapp"],
+  props: ["data", "lang"],
+  computed: {
+    formatedNumber: function ({ lang, data }: { lang: String; data: any }) {
+      if (lang == "br") {
+        return (
+          "(" +
+          data.whatsapp.substr(2, 2) +
+          ") " +
+          data.whatsapp.substr(4, 4) +
+          "-" +
+          data.whatsapp.substr(8, 4)
+        );
+      } else {
+        return (
+          "+" +
+          data.whatsapp.substr(0, 2) +
+          " (" +
+          data.whatsapp.substr(2, 2) +
+          ") " +
+          data.whatsapp.substr(4, 4) +
+          "-" +
+          data.whatsapp.substr(8, 4)
+        );
+      }
+    },
+  },
 };
 </script>
 

@@ -27,11 +27,11 @@ import ObzidianSlide from "./Obzidian/ObzidianSlide.vue";
 import ObzidianAbout from "./Obzidian/ObzidianAbout.vue";
 
 export default {
+  props: ["text"],
   components: {
     ObzidianSlide,
     ObzidianAbout,
   },
-  props: ["text"],
 };
 </script>
 <style scoped></style>

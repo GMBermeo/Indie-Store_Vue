@@ -35,7 +35,7 @@
           >
             <div>Fio de Nós</div>
             <div>
-              {{ lang == "br" ? product.collection.br : product.collection.en }}
+              {{ product.collection }}
             </div>
           </div>
           <div
@@ -44,8 +44,8 @@
               'md:text-base',
             ]"
           >
-            <div>{{ lang == "br" ? product.name.br : product.name.en }}</div>
-            <div>{{ lang == "br" ? product.price.br : product.price.en }}</div>
+            <div>{{ product.name }}</div>
+            <div>{{ product.price }}</div>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
         class="bg-black text-white float-right ml-3 h-16 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
         @click="$emit('placeOrder')"
       >
-        {{ lang == "br" ? "Fazer pedido" : "Place order" }}
+        {{ text.placeOrderButton }}
       </button>
       <p class="text-lg">
         {{ text.products }}
@@ -68,7 +68,7 @@
 
 <script lang="ts">
 export default {
-  props: ["lang", "products", "text"],
+  props: ["products", "text"],
 };
 </script>
 <style scoped>

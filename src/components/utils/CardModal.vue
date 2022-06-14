@@ -1,14 +1,10 @@
 <template>
-  <div class="modal-window">
+  <div class="modal-window" @click="$emit('closeModal')">
     <div class="bg-white mb-4 flex h-full w-full flex-col rounded-lg">
       <div class="m-3 flex justify-between p-1">
         <div class="text-2xl">
           <h1>
-            {{
-              lang == "br"
-                ? selectedProduct.collection.br
-                : selectedProduct.collection.en
-            }}
+            {{ selectedProduct.collection }}
           </h1>
         </div>
         <div>
@@ -34,49 +30,34 @@
         <div class="px-6 pb-6 pt-4 md:pt-6">
           <div>
             <h1 class="mb-4 text-4xl underline decoration-primary-A400">
-              {{
-                lang == "br" ? selectedProduct.name.br : selectedProduct.name.en
-              }}
+              {{ selectedProduct.name }}
             </h1>
           </div>
           <div class="mb-4 font-sans text-lg">
-            {{
-              lang == "br"
-                ? selectedProduct.description.br
-                : selectedProduct.description.en
-            }}
+            {{ selectedProduct.description }}
           </div>
 
           <div class="flex justify-between">
             <p class="self-center text-2xl">
-              {{
-                lang == "br"
-                  ? selectedProduct.price.br
-                  : selectedProduct.price.en
-              }}
+              {{ selectedProduct.price }}
             </p>
             <button
               class="bg-black text-white float-right ml-3 h-12 w-[10rem] rounded-xl text-2xl md:w-[20rem]"
               @click="$emit('placeOrder', selectedProduct)"
             >
-              {{ lang == "br" ? "Fazer pedido" : "Place order" }}
+              {{ text.placeOrderButton }}
             </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="background bg-black" @click="closeModal()"></div>
+  <div class="background bg-black"></div>
 </template>
 
 <script lang="ts">
 export default {
-  props: ["selectedProduct", "lang"],
-  created: function () {
-    console.log("CardModal.vue(created) - this.selectedProduct ");
-    console.log(this.selectedProduct);
-    console.log("locale: " + this.lang);
-  },
+  props: ["selectedProduct", "text"],
 };
 </script>
 <style scoped>
