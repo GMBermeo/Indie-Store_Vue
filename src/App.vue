@@ -2,6 +2,7 @@
   <CardModal
     v-if="toggleModal"
     :selectedProduct="selectedProduct"
+    :text="text"
     v-on:closeModal="closeModal()"
     v-on:placeOrder="placeOrder($event)"
   />
