@@ -1,6 +1,6 @@
 <template>
   <div class="inner-container">
-    <div class="mb-6 px-4 sm:px-0">
+    <div class="mb-2 px-4 sm:px-0">
       <div class="float-left mr-6 lg:mr-12">
         <div class="w-44">
           <img src="/images/mockup/obzidian.jpg" />

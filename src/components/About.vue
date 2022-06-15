@@ -1,7 +1,7 @@
 <template>
   <div id="About" class="inner-container px-0">
     <div
-      class="rellax grid grid-cols-2 gap-3 pt-2 pl-1 pr-6 md:grid-cols-3 md:pl-2"
+      class="rellax mt-4 grid grid-cols-2 gap-3 pt-2 pl-1 pr-6 md:grid-cols-3 md:pl-2"
     >
       <div class="col-span-1 row-span-2 md:col-span-2">
         <div class="min-h-3 relative z-0 h-full">
@@ -34,7 +34,7 @@
         data-rellax-speed="1"
         data-rellax-percentage="0.4"
       >
-        {{ text.about1 }}
+        {{ text.about[0] }}
       </p>
     </div>
   </div>
@@ -45,7 +45,7 @@
       <div class="col-span-2 row-[span_9_/_span_9] md:col-span-3">
         <img src="/svg/futurewear.svg" class="row-span-3 mb-4" />
         <p class="row-span-3 pb-16 text-lg leading-tight">
-          {{ text.about2 }}
+          {{ text.about[1] }}
         </p>
         <div class="relative z-0 row-span-3">
           <span

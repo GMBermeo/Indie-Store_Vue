@@ -2,12 +2,11 @@
   <CardModal
     v-if="toggleModal"
     :selectedProduct="selectedProduct"
-    :text="text"
     v-on:closeModal="closeModal()"
     v-on:placeOrder="placeOrder($event)"
   />
   <Hero />
-  <NavBar :lang="lang" />
+  <NavBar :text="text" />
   <About :text="text" />
   <Obzidian :text="text" />
   <Products
@@ -88,9 +87,9 @@ export default {
             data.whatsapp +
             "?text=" +
             encodeURIComponent(
-              this.text.whatsappMessage.p1 +
+              this.text.whatsappMessage[0] +
                 product.name +
-                this.text.whatsappMessage.p2 +
+                this.text.whatsappMessage[1] +
                 product.collection
             ),
           "_blank"

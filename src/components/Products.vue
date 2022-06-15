@@ -96,7 +96,7 @@ export default {
 </style>
 <style lang="postcss" scoped>
 .gallery {
-  @apply mb-5 grid w-full grid-cols-6 gap-4 px-4 sm:px-0 md:gap-6;
+  @apply mb-5 mt-4 grid w-full grid-cols-6 gap-4 px-4 sm:px-0 md:gap-6;
 }
 .card-product {
   @apply flex aspect-[9/12] w-full cursor-pointer flex-col bg-cover bg-center;

@@ -76,7 +76,7 @@ export default {
 </style>
 <style lang="postcss" scoped>
 .modal-window {
-  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden px-3 pt-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32;
+  @apply fixed top-0 left-0 right-0 bottom-0 z-50  overflow-x-hidden overflow-y-hidden px-3 py-3 sm:px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32;
 }
 .background {
   @apply fixed inset-0 z-40 h-full w-full opacity-50;
