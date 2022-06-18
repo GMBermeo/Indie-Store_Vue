@@ -102,7 +102,7 @@
     {
       "id": 3,
       "name": "Quebra-dobra",
-      "collection": "Coleção MARBLE",
+      "collection": "Coleção OBZIDIAN",
       "price": "200,00", "en": "$ 135.00",
       "description": "Phasellus tincidunt justo quam, nec eleifend nulla vehicula vitae. Pellentesque nec sapien eu sem posuere commodo at eu massa. In ullamcorper luctus velit. Donec sagittis, sapien non pretium pulvinar, arcu elit mattis est, a cursus mi est ac tortor. Integer porttitor metus et mi ultrices, sed dictum nisl varius. Donec quis justo ac mauris laoreet porttitor. Etiam consectetur fringilla lectus, in gravida tortor interdum ac. Suspendisse porttitor consequat purus. Nunc odio velit, ullamcorper quis vulputate non, commodo quis magna. Aliquam eget elementum nunc. Nulla facilisi. Vestibulum pellentesque pretium arcu, faucibus viverra ligula placerat ac. Nullam mollis auctor est, in accumsan eros hendrerit eu. In sem justo, feugiat et aliquam sed, accumsan sit amet mi.",
       "photos": [
@@ -116,7 +116,7 @@
     {
       "id": 4,
       "name": "Escodelete Curto",
-      "collection": "Coleção TOPAZ",
+      "collection": "Coleção OBZIDIAN",
       "price": "180,00",
       "description": "Etiam lacinia iaculis massa vel iaculis. Nunc gravida sem et ipsum vestibulum finibus. Donec vulputate justo ante, ut sollicitudin ligula gravida eget. Integer euismod posuere mi quis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut felis est, tempus in velit id, malesuada rutrum nisl. In leo orci, feugiat vitae ultricies sed, congue eget quam. Donec sed libero varius, pellentesque mauris ut, scelerisque est. Vivamus in est sit amet est commodo elementum ac eget massa.",
       "photos": [
@@ -130,7 +130,7 @@
     {
       "id": 5,
       "name": "Brizzer",
-      "collection": "Coleção DUNE",
+      "collection": "Coleção OBZIDIAN",
       "price": "160,00",
       "description": "Sed consequat vestibulum dui, sit amet placerat nulla dapibus ut. Phasellus sit amet rhoncus arcu. Vivamus eget rhoncus ligula, non accumsan nisl. Nullam quis augue dui. Aenean maximus id nulla commodo congue. Aenean molestie nulla ac pulvinar tincidunt. Quisque convallis nulla ac eleifend congue. Aenean placerat, magna id ultrices sodales, orci ex condimentum augue, eu egestas ligula nisl venenatis ex. Nam et ex egestas, lacinia nisl at, vulputate velit. Pellentesque id mi at justo condimentum blandit vitae nec mi. Fusce eget feugiat mauris, vel tristique tellus. Suspendisse potenti. Nam venenatis mi et luctus aliquam. Ut eget sem euismod, feugiat felis ut, volutpat odio.",
       "photos": [
