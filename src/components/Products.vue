@@ -9,29 +9,22 @@
         :style="{
           'background-image':
             product.id == products.length
-              ? 'url(/images/mockup' + product.photos[0] + 'lg.jpg)'
-              : 'url(/images/mockup' + product.photos[0] + 'sm.jpg)',
+              ? 'url(' + product.photos[0] + 'lg.jpg)'
+              : 'url(' + product.photos[0] + 'sm.jpg)',
         }"
         :class="[
-          product.id <= 2
-            ? 'col-span-3'
-            : [
-                product.id == products.length ? 'col-span-6' : 'col-span-3',
-                ' md:col-span-2',
-              ],
+          product.id == 1 ? 'col-span-6' : 'col-span-3',
+          ' md:col-span-2',
         ]"
       >
         <img src="/svg/iconFull.svg" class="full-icon ml-auto" />
         <div
           class="card-info md:p-4"
-          :class="[product.id === products.length ? 'p-8' : 'p-4']"
+          :class="[product.id === 1 ? 'p-8' : 'p-4']"
         >
           <img src="/svg/logo-mono.svg" class="icon" />
           <div
-            :class="[
-              product.id === products.length ? 'text-3xl' : 'text-xl',
-              'md:text-2xl',
-            ]"
+            :class="[product.id == 1 ? 'text-3xl' : 'text-xl', 'md:text-2xl']"
           >
             <div>Fio de Nós</div>
             <div>
@@ -39,10 +32,7 @@
             </div>
           </div>
           <div
-            :class="[
-              product.id === products.length ? 'text-lg' : 'text-sm',
-              'md:text-base',
-            ]"
+            :class="[product.id == 1 ? 'text-lg' : 'text-sm', 'md:text-base']"
           >
             <div>{{ product.name }}</div>
             <div>{{ product.price }}</div>

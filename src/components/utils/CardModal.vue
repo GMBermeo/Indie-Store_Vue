@@ -20,7 +20,7 @@
         <img
           v-for="photo in selectedProduct.photos"
           :key="selectedProduct.photos.indexOf(photo)"
-          :src="'/images/mockup' + photo + 'lg.jpg'"
+          :src="photo + 'lg.jpg'"
           class="photo object-cover"
           :class="[
             selectedProduct.photos.indexOf(photo) == 0 ? '' : 'mt-2 md:mt-4',
