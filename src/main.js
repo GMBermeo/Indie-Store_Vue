@@ -21,6 +21,10 @@ let rellax = new Rellax(".rellax", {
 });
 
 // const app = createSSRApp(App).mount("#app");
+App.use(
+  "/robots.txt",
+  express.static(path.join(__dirname, "dist/static/robots.txt"))
+);
 
 async () => {
   const html = await renderToString(createSSRApp(App).mount("#app"));
