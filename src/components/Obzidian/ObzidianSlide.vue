@@ -102,7 +102,7 @@ export default {
 <style scoped>
 @media only screen and (max-width: 512px) {
   .photo1 {
-    background-image: url("/images/mockup/ALESITE01-lg.jpg");
+    background-image: url("/images/mockup/ALESITE01-sm.jpg");
     background-position: 50% 0%;
     transition: all 1s ease-in-out;
   }
