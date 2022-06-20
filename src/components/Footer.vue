@@ -46,11 +46,11 @@ export default {
       } else {
         return (
           "+" +
-          data.whatsapp.substr(0, 1) +
+          data.whatsapp.substr(0, 2) +
           " (" +
-          data.whatsapp.substr(1, 3) +
+          data.whatsapp.substr(2, 2) +
           ") " +
-          data.whatsapp.substr(4, 3) +
+          data.whatsapp.substr(4, 4) +
           "-" +
           data.whatsapp.substr(7, 4)
         );

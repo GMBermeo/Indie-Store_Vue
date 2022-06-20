@@ -14,6 +14,7 @@
             class="img-mask1 rellax ml-4 h-full bg-primary-400"
             data-rellax-zindex="2"
             data-rellax-speed="2"
+            :style="{ backgroundImage: `url('${data.about.images[0]}')` }"
           ></div>
         </div>
       </div>
@@ -56,18 +57,28 @@
         </div>
       </div>
       <div
-        class="pb-50 polygon5 rellax z-10 col-span-1 row-[span_8_/_span_8] bg-primary-A400 md:col-span-1"
+        class="pb-50 img-mask2 rellax z-10 col-span-1 row-[span_8_/_span_8] bg-primary-A400 md:col-span-1"
         data-rellax-speed="0.75"
         data-rellax-percentage="0.5"
+        :style="{ backgroundImage: `url('${data.about.images[1]}')` }"
       />
     </div>
   </div>
 </template>
 <style scoped>
 .img-mask1 {
+  background-size: cover;
+  background-position-x: 50%;
   -webkit-clip-path: polygon(4% 0, 100% 0, 81% 100%, 0% 100%);
   clip-path: polygon(4% 0, 100% 0, 81% 100%, 0% 100%);
   /* shape-outside: polygon(4% 0, 100% 0, 81% 100%, 0% 100%); */
+}
+.img-mask2 {
+  background-size: cover;
+  background-position-x: 50%;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  /* shape-outside: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%); */
 }
 .polygon3 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 69%, 0% 100%);
@@ -79,11 +90,7 @@
   clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 98%);
   /* shape-outside: polygon(0 24%, 100% 0, 100% 100%, 0 98%); */
 }
-.polygon5 {
-  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-  /* shape-outside: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%); */
-}
+
 .polygon6 {
   -webkit-clip-path: polygon(0 0, 99% 0, 100% 100%, 0 50%);
   clip-path: polygon(0 0, 99% 0, 100% 100%, 0 50%);
@@ -92,6 +99,14 @@
 </style>
 <script lang="ts">
 export default {
-  props: ["text"],
+  props: ["text", "data"],
+  methods: {
+    backgroundImage(image: String) {
+      return {
+        // any other styles you might need to add on as an example
+        "background-image": `url(${image})`,
+      };
+    },
+  },
 };
 </script>

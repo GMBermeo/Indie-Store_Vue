@@ -58,9 +58,9 @@ export default {
       slide: 1,
     };
   },
-  props: [],
+  props: ["data"],
   computed: {
-    classObject() {
+    classObject(this: any): any {
       return {
         photo1: this.slide === 1,
         photo2: this.slide === 2,
@@ -69,14 +69,14 @@ export default {
     },
   },
   methods: {
-    next() {
+    next(this: any) {
       if (this.slide === 3) {
         this.slide = 1;
       } else {
         this.slide++;
       }
     },
-    prev() {
+    prev(this: any) {
       if (this.slide === 1) {
         this.slide = 3;
       } else {
@@ -87,7 +87,7 @@ export default {
     //   setInterval(next(), 10000);
     // },
   },
-  mounted() {
+  mounted(this: any) {
     setInterval(() => {
       if (this.slide == 3) {
         this.slide = 1;
@@ -102,14 +102,11 @@ export default {
 <style scoped>
 @media only screen and (max-width: 512px) {
   .photo1 {
-    background-image: url("/images/mockup/ALESITE01-sm.jpg");
-    background-position: 50% 0%;
+    background-image: url("/images/slide/ALESITE01-sm.jpg");
+    background-position: 50% 20%;
     transition: all 1s ease-in-out;
   }
   .photo2 {
-    background-image: url("/images/mockup/pexels-cottonbro-5119398-sm.jpg");
-    background-position: 50% 30%;
-    transition: all 1s ease-in-out;
   }
   .photo3 {
     background-image: url("/images/mockup/pexels-cottonbro-6153353-sm.jpg");
@@ -119,12 +116,12 @@ export default {
 }
 @media only screen and (min-width: 512px) {
   .photo1 {
-    background-image: url("/images/mockup/pexels-cottonbro-6153562-lg.jpg");
-    background-position: 50% 0%;
+    background-image: url("/images/slide/ALESITE01-lg.jpg");
+    background-position: 50% 20%;
     transition: all 1s ease-in-out;
   }
   .photo2 {
-    background-image: url("/images/mockup/ALESITE01-lg.jpg");
+    background-image: url("/images/mockup/pexels-cottonbro-5119398-lg.jpg");
     background-position: 50% 30%;
     transition: all 1s ease-in-out;
   }

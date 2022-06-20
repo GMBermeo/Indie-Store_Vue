@@ -8,13 +8,14 @@
         :key="product.id"
         :style="{
           'background-image':
-            product.id == products.length
+            product.id == 1
               ? 'url(' + product.photos[0] + 'lg.jpg)'
               : 'url(' + product.photos[0] + 'sm.jpg)',
         }"
         :class="[
-          product.id == 1 ? 'col-span-6' : 'col-span-3',
-          ' md:col-span-2',
+          product.id == 1
+            ? 'col-span-6 md:col-span-3'
+            : [product.id == 2 ? 'col-span-3' : 'col-span-3 md:col-span-2'],
         ]"
       >
         <img src="/svg/iconFull.svg" class="full-icon ml-auto" />

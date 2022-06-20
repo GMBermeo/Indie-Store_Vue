@@ -1,4 +1,10 @@
 {
     "whatsapp": "5561992887724",
-    "instagram": "fiofuturewear"
+    "instagram": "fiofuturewear",
+    "about": {
+      "images": [
+        "",
+        ""
+      ]
+    }
 }

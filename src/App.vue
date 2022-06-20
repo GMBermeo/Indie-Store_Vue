@@ -8,8 +8,8 @@
   />
   <Hero />
   <NavBar :text="text" />
-  <About :text="text" />
-  <Obzidian :text="text" />
+  <About :text="text" :data="data" />
+  <Obzidian :text="text" :data="data" />
   <Products
     :products="products"
     :text="text"
