@@ -102,7 +102,7 @@ export default {
 <style scoped>
 @media only screen and (max-width: 512px) {
   .photo1 {
-    background-image: url("/images/mockup/pexels-cottonbro-6153562-sm.jpg");
+    background-image: url("/images/mockup/ALESITE01-lg.jpg");
     background-position: 50% 0%;
     transition: all 1s ease-in-out;
   }
@@ -124,7 +124,7 @@ export default {
     transition: all 1s ease-in-out;
   }
   .photo2 {
-    background-image: url("/images/mockup/pexels-cottonbro-5119398-lg.jpg");
+    background-image: url("/images/mockup/ALESITE01-lg.jpg");
     background-position: 50% 30%;
     transition: all 1s ease-in-out;
   }
